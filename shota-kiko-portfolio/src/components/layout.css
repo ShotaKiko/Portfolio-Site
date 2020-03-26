@@ -621,16 +621,40 @@ pre tt:after {
   }
 }
 
-.container{
-  background: blueviolet; 
-  border: 2px solid orange;
+.container-fluid{
+  background: #B1F1EA;
+  border: 2px solid red;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.logoContainer{
+  border: 2px dashed orange;
+  width: 15%;
+  padding-left: 0.5%;
+
+}
+
+.logoimage{
+  height: 100px;
+  size: 30px;
+
+  border: 3px solid purple;
+}
+
+.navContainer{
+  border: 1px solid salmon;
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 1%;
 }
 
 .landing{
   background-image: url("../images/landing.jpg");
-  height: 1000px;
+  height:100vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -643,5 +667,19 @@ pre tt:after {
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.2;
+  opacity: 0.5;
+}
+
+.landing-text-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.landing-text{
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 520px;
 }

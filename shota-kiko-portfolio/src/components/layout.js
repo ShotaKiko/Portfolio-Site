@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Landing />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <NavBar />
       <div
         style={{

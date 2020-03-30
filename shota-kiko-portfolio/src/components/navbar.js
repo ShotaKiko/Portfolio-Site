@@ -13,6 +13,7 @@ const NavBar = () =>(
         <Link to="/projects"> Projects</Link>
         <Link to="/contact"> Contact</Link>
        </div>
+       <div className="placeholder"></div>
     </div>
 )
 

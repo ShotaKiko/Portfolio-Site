@@ -8,10 +8,10 @@ const NavBar = () =>(
         {/* <img src="../images/gatsby-icon.png" alt="test"></img> */}
        </div>
        <div className="navContainer">
-        <Link to="/"> Home</Link>
-        <Link to="/about"> About</Link>
-        <Link to="/projects"> Projects</Link>
-        <Link to="/contact"> Contact</Link>
+        <Link to="/" style={{color:"white"}}> Home</Link>
+        <Link to="/aboutMe" style={{color:"white"}}> About</Link>
+        <Link to="/projects" style={{color:"white"}}> Projects</Link>
+        <Link to="/contact" style={{color:"white"}}> Contact</Link>
        </div>
        <div className="placeholder"></div>
     </div>

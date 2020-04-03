@@ -718,8 +718,55 @@ pre tt:after {
 
 .aboutRight{  
   border: 2px solid blue;
-
+  
   width: 50%;
+}
+
+.techHeader{
+  border: 2px dashed red;
+
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.iconContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.firstRow{
+  /* border: 3px solid pink; */
+  
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.secondRow{
+  /* border: 3px solid pink; */
+  
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.thirdRow{
+  /* border: 3px solid pink; */
+  
+  margin: 40px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+i{
+  max-width: 16em;
+ 
+  font-size: 80px;
+  /* border: 1px solid green; */
 }
 
 .aboutLink{

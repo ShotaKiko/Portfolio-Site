@@ -694,7 +694,7 @@ pre tt:after {
 }
 
 .aboutContainer{
-  border: 2px solid red;
+  border: 2px dashed red;
   width:100%;
   display: flex;
   flex-wrap: wrap;
@@ -702,8 +702,12 @@ pre tt:after {
 
 .aboutTop{
   border: 2px solid purple;
-  
   width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .aboutLeft{
@@ -720,4 +724,17 @@ pre tt:after {
 
 .aboutLink{
   border: 2px solid orange;
+}
+
+/* Projects Section */
+
+.projectsPageContainer{
+  border: 2px solid indigo;
+  
+  margin-top: 5px;
+}
+
+.projectHeader{
+  display: flex;
+  justify-content: center;
 }

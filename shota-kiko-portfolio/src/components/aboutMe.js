@@ -12,11 +12,14 @@ const AboutMe = () => (
         </div>
         
         <div className="aboutLeft">
-            <p>
+            <h4>
             Hey there,<br></br>
-
+            </h4>
+            <h5>
             My name is Shota Kikozashvili<br></br>
+            </h5>
 
+            <p>
             I am a Full Stack Developer with experience building both front and backend architectures for a variety of applications.
             {/* My main languages are JavaScript and Python and I have extensive experience using . */}
             

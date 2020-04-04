@@ -712,8 +712,12 @@ pre tt:after {
 
 .aboutLeft{
   border: 2px solid green;
-
+  padding: 30px;
   width: 50%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  
 }
 
 .aboutRight{  
@@ -764,7 +768,10 @@ pre tt:after {
 
 i{
   max-width: 16em;
- 
+  /* box-shadow: 2px 2px 10px #d8dfeb; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+  padding:15px;
+  border-radius: 5px;
   font-size: 80px;
   /* border: 1px solid green; */
 }

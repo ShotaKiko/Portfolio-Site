@@ -11,9 +11,18 @@ const Projects = () => (
         </div>
        
        <div className="projectsCardsContainer">
-        {/* check deployed status */}
-       projects here
-
+        <div className="project 1">
+            <img src="https://imagehost.imageupload.net/2020/04/07/myfieldtripp.png" alt="Field Trip Planner"/>
+        </div>
+        <div className="project 2">
+            <img src="https://imagehost.imageupload.net/2020/04/07/myfieldtripp.png" alt="Field Trip Planner"/>
+        </div>
+        <div className="project 3">
+            <img src="https://imagehost.imageupload.net/2020/04/07/myfieldtripp.png" alt="Field Trip Planner"/>
+        </div>
+        <div className="project 4">
+            <img src="https://imagehost.imageupload.net/2020/04/07/myfieldtripp.png" alt="Field Trip Planner"/>
+        </div>
        </div>
      
         

@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="pageContainer">
       <Landing />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <NavBar />
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

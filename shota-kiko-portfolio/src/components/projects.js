@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const Projects = () => (
-    <div className="projectsPageContainer">
+    <section className="projectsPageContainer" id="projects">
         <SEO title="Project List" />
         
         <div className="projectHeader">
@@ -29,7 +29,7 @@ const Projects = () => (
         <div className="aboutLink">
             <Link to="/">Back to top</Link>
         </div>
-    </div>
+    </section>
   )
   
   export default Projects

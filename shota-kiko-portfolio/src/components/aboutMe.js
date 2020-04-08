@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import 'devicon'
 
 const AboutMe = () => (
-    <div className="aboutContainer">
+    <section className="aboutContainer" id="about">
         <SEO title="About" />        
         <div className="aboutLeft">
             <h3 style={{textAlign:"center"}}>
@@ -75,7 +75,7 @@ const AboutMe = () => (
         <div className="aboutLink">
             <Link to="/">Back to top</Link>
         </div>
-    </div>
+    </section>
   )
   
   export default AboutMe

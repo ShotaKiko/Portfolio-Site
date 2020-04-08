@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from 'reactstrap'
 
 const Landing = () => (
-    <div className="landing">
+    <section className="landing" id="home">
         <div className="overlay"></div>
         <div className="landing-text-wrapper">
             <h2 className="landing-text">
@@ -13,7 +13,7 @@ const Landing = () => (
                 <Button color="info">Learn More</Button>
             </h2>
         </div>
-    </div>
+    </section>
 )
 
 export default Landing

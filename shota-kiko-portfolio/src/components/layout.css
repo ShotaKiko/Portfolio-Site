@@ -673,17 +673,15 @@ pre tt:after {
   
 }
 
-.navContainer a{
-  text-decoration: none;
-  
-  list-style: none;
-  color: #fff;
+.navlink{
+  cursor: pointer;
 }
 
-.navContainer a:hover{
-  cursor: pointer;
-  color:#0ed1e3;
+.navlink:hover{
+  color:#1eb5d4;
 }
+
+
 
 .landing{
   background-image: url("../images/landing.jpg");
@@ -775,7 +773,7 @@ pre tt:after {
 .firstRow{
   /* border: 3px solid pink; */
   
-  margin: 20px 0px;
+  margin: 40px 0px;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -823,7 +821,7 @@ i{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
   padding:15px;
   border-radius: 5px;
-  font-size: 70px;
+  font-size: 3.2vw;
   /* border: 1px solid green; */
 }
 
@@ -833,6 +831,10 @@ i{
   color: #37766F;
   text-decoration: none;
   cursor: pointer;
+}
+
+.aboutLink:hover{
+  color:#1eb5d4;
 }
 
 /* Projects Section */

@@ -9,10 +9,30 @@ const NavBar = () =>(
         {/* <img src="../images/gatsby-icon.png" alt="test"></img> */}
        </div>
        <div className="navContainer">
-            <Link to="home" smooth={true} duration={1200}>Home</Link>
-            <Link to="about" smooth={true} duration={1000}>About</Link>
-            <Link to="projects" smooth={true} duration={1000}>Projects</Link>
-            <Link to="contact" smooth={true} duration={1200}>Contact</Link>
+            <div className="navlink 1">
+                <Link to="home"  activeClass="active" spy={true} smooth={true} duration={1200}>
+                    Home
+                </Link>
+            </div>
+
+            <div className="navlink 2">
+                <Link to="about" activeClass="active"  spy={true} smooth={true} duration={1000}>
+                    About
+                </Link>
+            </div>
+            
+            <div className="navlink 3">
+                <Link to="projects" activeClass="active" spy={true} smooth={true} duration={1000}>
+                    Projects
+                </Link>
+            </div>
+            
+            <div className="navlink 4">
+                <Link to="contact" activeClass="active" spy={true} smooth={true} duration={1200}>
+                    Contact
+                </Link>
+            </div>
+            
        </div>
        <div className="placeholder"></div>
     </div>

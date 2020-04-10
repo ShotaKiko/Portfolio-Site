@@ -73,7 +73,9 @@ const AboutMe = () => (
         </div>
         
         <div className="aboutLink">
-            <Link to="home" smooth={true} duration={1100}>Back to top</Link>
+            <Link to="home" activeClass="active" spy={true} smooth={true} duration={1100}>
+                Back to top
+            </Link>
         </div>
     </section>
   )

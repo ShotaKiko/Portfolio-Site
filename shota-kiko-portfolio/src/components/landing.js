@@ -12,7 +12,11 @@ const Landing = () => (
                 <br></br>
                 I'm a Fullstack Developer
                 <br></br>
-                <Button color="info"><Link to="about" smooth={true} duration={1000}>Learn More</Link></Button>
+                <Button color="info">
+                    <Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
+                        Learn More
+                    </Link>
+                </Button>
             </h2>
         </div>
     </section>

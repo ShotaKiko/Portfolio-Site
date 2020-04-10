@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 import SEO from "../components/seo"
 import 'devicon'
 
@@ -73,7 +73,7 @@ const AboutMe = () => (
         </div>
         
         <div className="aboutLink">
-            <Link to="/">Back to top</Link>
+            <Link to="home" smooth={true} duration={1100}>Back to top</Link>
         </div>
     </section>
   )

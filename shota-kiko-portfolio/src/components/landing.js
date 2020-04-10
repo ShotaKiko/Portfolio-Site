@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from 'reactstrap'
+import { Link } from "react-scroll"
+
 
 const Landing = () => (
     <section className="landing" id="home">
@@ -10,7 +12,7 @@ const Landing = () => (
                 <br></br>
                 I'm a Fullstack Developer
                 <br></br>
-                <Button color="info">Learn More</Button>
+                <Button color="info"><Link to="about" smooth={true} duration={1000}>Learn More</Link></Button>
             </h2>
         </div>
     </section>

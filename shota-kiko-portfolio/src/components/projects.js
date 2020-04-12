@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import MyFieldTrip from './projectCards/fieldtrip'
+import ImmunTracker from './projectCards/immunTracker'
 
 const Projects = () => (
     <section className="projectsPageContainer" id="projects">
@@ -16,7 +17,7 @@ const Projects = () => (
             <MyFieldTrip />
         </div>
         <div className="project 2">
-            2
+            <ImmunTracker />
         </div>
         <div className="project 3">
             3   

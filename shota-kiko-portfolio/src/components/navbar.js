@@ -10,7 +10,7 @@ const NavBar = () =>(
        </div>
        <div className="navContainer">
             <div className="navlink 1">
-                <Link to="home"  activeClass="active" spy={true} smooth={true} duration={1200}>
+                <Link to="home"  smooth={true} duration={1200}>
                     Home
                 </Link>
             </div>

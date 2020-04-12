@@ -841,7 +841,7 @@ i{
 /* Projects Section */
 
 .projectsPageContainer{
-  border: 2px solid white;
+  /* border: 2px solid white; */
   height: 100vh;
 }
 

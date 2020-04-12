@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function Sonic() {
+export default function UIProject() {
   const classes = useStyles();
 
   return (
@@ -31,22 +31,22 @@ export default function Sonic() {
           component="img"
           alt="sonicthelambdog"
           height="300"
-          image="https://imagehost.imageupload.net/2020/04/12/sonic-lambdog.png"
-          title="Sonic the Lambdog"
+        //   TODO update image for card
+          image="https://imagehost.imageupload.net/2020/04/12/ui-project.png"
+          title="User Interface Project "
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-          Sonic the Lambdog
+            User Interface Project
           </Typography>
 
           <Typography className={classes.sub} color="textSecondary" gutterBottom>
-              Python | Django | React | Semantic UI
+              HTML | CSS | Javascript | Less
           </Typography>
           
           <Typography variant="body1" component="p">
-            Sonic the Lambdog features a room generation algorithm. Users
-            can sign up and attempt to traverse through the labyrinth while viewing other players
-            in the same room.
+            A beginner project focused on implementing a clean user interface and responsive design
+            for desktop, tablet and mobile devices. Built to design document specifications.
           </Typography>
         </CardContent>
       </CardActionArea>

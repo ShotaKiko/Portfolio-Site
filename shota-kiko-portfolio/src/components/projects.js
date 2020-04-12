@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import MyFieldTrip from './projectCards/fieldtrip'
 import ImmunTracker from './projectCards/immunTracker'
 import Sonic from './projectCards/sonicLambdog'
+import UIProject from './projectCards/uiProject'
 
 const Projects = () => (
     <section className="projectsPageContainer" id="projects">
@@ -17,16 +18,16 @@ const Projects = () => (
        
        <div className="projectsCardsContainer">
         <div className="project 1">
-            <MyFieldTrip />
+            <UIProject />
         </div>
         <div className="project 2">
             <ImmunTracker />
         </div>
         <div className="project 3">
-            <Sonic />  
+            <MyFieldTrip />
         </div>
         <div className="project 4">
-            4
+            <Sonic />  
         </div>
        </div>
      

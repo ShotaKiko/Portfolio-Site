@@ -841,7 +841,7 @@ i{
 /* Projects Section */
 
 .projectsPageContainer{
-  border: 2px solid indigo;
+  border: 2px solid white;
   height: 100vh;
 }
 
@@ -853,16 +853,17 @@ i{
 }
 
 .projectsCardsContainer{
+  /* border: 2px dashed steelblue; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px dashed steelblue;
 }
 
 .project{
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   padding:5px;
-  width:40%;
+  width:25%;
+  
 }
 
 .card{

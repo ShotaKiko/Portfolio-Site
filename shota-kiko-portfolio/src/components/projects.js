@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from "gatsby"
 import SEO from "../components/seo"
+
+// ~~~~~~~~~~~~Projects~~~~~~~~~~~~~~~~~~~~~~~~
 import MyFieldTrip from './projectCards/fieldtrip'
 import ImmunTracker from './projectCards/immunTracker'
+import Sonic from './projectCards/sonicLambdog'
 
 const Projects = () => (
     <section className="projectsPageContainer" id="projects">
@@ -20,7 +23,7 @@ const Projects = () => (
             <ImmunTracker />
         </div>
         <div className="project 3">
-            3   
+            <Sonic />  
         </div>
         <div className="project 4">
             4

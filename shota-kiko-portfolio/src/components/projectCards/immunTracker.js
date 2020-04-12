@@ -39,7 +39,7 @@ export default function ImmunTracker() {
           Immunization Tracker
           </Typography>
 
-          <Typography className={classes.sub} color="textSecondary" gutterBottom>React | Redux | Bootstrap | Node | Postgres </Typography>
+          <Typography className={classes.sub} color="textSecondary" gutterBottom>React | Redux | Bootstrap | Node </Typography>
           
           <Typography variant="body1" component="p">
           ImmuTrack is designed to help reduce hassle and potential stress through the provision of a centralized and streamlined resource with which to track all of your immunization needs.

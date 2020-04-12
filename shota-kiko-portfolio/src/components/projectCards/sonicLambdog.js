@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function MyFieldTripp() {
+export default function Sonic() {
   const classes = useStyles();
 
   return (
@@ -29,22 +29,24 @@ export default function MyFieldTripp() {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="fieldtripp"
+          alt="sonicthelambdog"
           height="300"
-          image="https://imagehost.imageupload.net/2020/04/07/myfieldtripp.png"
-          title="Field Trip Planner"
+          image="https://imagehost.imageupload.net/2020/04/12/sonic-lambdog.png"
+          title="Sonic the Lambdog"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-          MyFieldTripp
+          Sonic the Lambdog
           </Typography>
 
-          <Typography className={classes.sub} color="textSecondary" gutterBottom>ReactN | Node | Postgres | Passport.js</Typography>
+          <Typography className={classes.sub} color="textSecondary" gutterBottom>
+              Python | Django | React | Semantic UI React
+          </Typography>
           
           <Typography variant="body1" component="p">
-            MyFieldTripp is a dependable field trip planner
-            that helps teachers bring back the joy of field trips. 
-            The app allows you to keep track of field trips and participants.
+            Sonic the Lambdog features a room generation algorithm. Users
+            can sign up and attempt to traverse through the labyrinth while viewing other players
+            in the same room.
           </Typography>
         </CardContent>
       </CardActionArea>

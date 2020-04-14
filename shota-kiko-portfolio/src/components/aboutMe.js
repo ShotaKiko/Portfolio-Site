@@ -3,8 +3,42 @@ import { Link } from "react-scroll"
 import SEO from "../components/seo"
 import 'devicon'
 
-const AboutMe = () => (
-    <section className="aboutContainer" id="about">
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import Button from '@material-ui/core/Button';
+import cyan from '@material-ui/core/colors/cyan';
+import { makeStyles } from '@material-ui/core/styles';
+
+const navButtonColor = cyan[700]
+const navButtonHoverColor = cyan[500]
+const buttonBorderColor= cyan[900]
+
+const useStyles = makeStyles({
+    navButton1:{
+      color: "white",
+      backgroundColor: navButtonColor,
+      borderRight:"1px solid",
+      borderRightColor: buttonBorderColor,
+      '&:hover': {
+        background: navButtonHoverColor,
+      }
+    },
+    navButton2:{
+        color: "white",
+        backgroundColor: navButtonColor,
+        borderLeft:"1px solid",
+        borderLeftColor: buttonBorderColor,
+        '&:hover': {
+          background: navButtonHoverColor,
+        }
+      },
+});
+
+export default function AboutMe() {
+    const classes = useStyles();
+  
+    return (
+        <section className="aboutContainer" id="about">
         <SEO title="About" />        
         <div className="aboutLeft">
             <h3 style={{textAlign:"center"}}>
@@ -15,19 +49,24 @@ const AboutMe = () => (
                 
                 <div className="text 1">
                     <p>
-                    I am a Full Stack Developer with experience building both front and backend architectures for a variety of applications. 
-                    I am a fast learner, quick to build upon on my existing knowledge and resourceful in finding ways to bridge the gaps in my understanding.
+                    I am a Full Stack Developer with experience building both front and backend 
+                    architectures for a variety of applications. 
+                    I am a fast learner, quick to build upon on my existing knowledge and resourceful 
+                    in finding ways to bridge the gaps in my understanding.
                     </p>
                 </div>
                 <div className="text 2">
                     <p>
-                    My work experience as a former scientitst has led me to develop a highly analytical and detail oriented approach which in turn I bring to software development.
-                    Most recently my time spent as a Team Lead has provided me with valuable skills working and leading others to complete project objectives and exceed expectations.
+                    My work experience as a former scientitst has led me to develop a highly
+                    analytical and detail oriented approach which in turn I bring to software development.
+                    Most recently my time spent as a Team Lead has provided me with valuable skills working 
+                    and leading others to complete project objectives and exceed expectations.
                     </p>
                 </div>
                 <div className="text 3">
                     <p>
-                    I am constantly curious and learning about new technologies, excited to apply all that I learn toward building solutions for real world problems.
+                    I am constantly curious and learning about new technologies, 
+                    excited to apply all that I learn toward building solutions for real world problems.
                     </p>
                 </div>
             </div>
@@ -73,11 +112,20 @@ const AboutMe = () => (
         </div>
         
         <div className="aboutLink">
-            <Link to="home" activeClass="active" spy={true} smooth={true} duration={1100}>
-                Back to top
-            </Link>
+            
+                <Link to="home" activeClass="active" spy={true} smooth={true} duration={1100}>
+                    <Button className={classes.navButton1} variant="contained">
+                        <KeyboardArrowUpIcon />
+                    </Button>
+                </Link>
+                
+                <Link to="projects" activeClass="active" spy={true} smooth={true} duration={1100}>
+                    <Button className={classes.navButton2} variant="contained"> 
+                        <KeyboardArrowDownIcon />
+                    </Button>
+                </Link>
+            
         </div>
     </section>
-  )
-  
-  export default AboutMe
+  );
+}

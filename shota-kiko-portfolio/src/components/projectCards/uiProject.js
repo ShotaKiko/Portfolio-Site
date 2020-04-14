@@ -65,6 +65,7 @@ export default function UIProject() {
         </CardContent>
       </CardActionArea>
       <CardActions>
+      <div className="cardBootons">
         <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
           <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
           <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" rel="noopener noreferrer" 
@@ -85,7 +86,7 @@ export default function UIProject() {
               deploy
           </a>
         </Button>
-      
+      </div>
       </CardActions>
     </Card>
   );

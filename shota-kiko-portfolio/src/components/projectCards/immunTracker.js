@@ -59,26 +59,28 @@ export default function ImmunTracker() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
-          <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
-          <a href="https://github.com/buildweek-immunizationtracker/front-end-architect" target="_blank" rel="noopener noreferrer" 
-            style={{textDecorationLine:"none", color:"inherit"}}>
-              Github
-          </a>
-        </Button>
-        
-        <Button className={classes.booton} size="small" variant="contained">
-          <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
-          More Info
-        </Button>
+          <div className="cardBootons">
+            <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+              <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
+              <a href="https://github.com/buildweek-immunizationtracker/front-end-architect" target="_blank" rel="noopener noreferrer" 
+                style={{textDecorationLine:"none", color:"inherit"}}>
+                  Github
+              </a>
+            </Button>
+            
+            <Button className={classes.booton} size="small" variant="contained">
+              <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
+              More Info
+            </Button>
 
-        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
-          <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
-          <a href="https://musing-albattani-db7dc4.netlify.com/index.html" target="_blank" rel="noopener noreferrer" 
-            style={{textDecorationLine:"none", color:"inherit"}}>
-              Visit Site
-          </a>
-        </Button>
+            <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+              <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
+              <a href="https://musing-albattani-db7dc4.netlify.com/index.html" target="_blank" rel="noopener noreferrer" 
+                style={{textDecorationLine:"none", color:"inherit"}}>
+                  Visit Site
+              </a>
+            </Button>
+        </div>
       </CardActions>
     </Card>
   );

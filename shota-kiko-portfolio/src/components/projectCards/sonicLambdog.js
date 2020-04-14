@@ -63,6 +63,7 @@ export default function Sonic() {
         </CardContent>
       </CardActionArea>
       <CardActions>
+      <div className="cardBootons">
         <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
           <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
           <a href="https://github.com/Sonic-BW" target="_blank" rel="noopener noreferrer" 
@@ -83,6 +84,7 @@ export default function Sonic() {
               Visit Site
           </a>
         </Button>
+        </div>
       </CardActions>
     </Card>
   );

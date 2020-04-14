@@ -61,6 +61,7 @@ export default function MyFieldTripp() {
         </CardContent>
       </CardActionArea>
       <CardActions>
+      <div className="cardBootons">
         <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
           <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
             <a href="https://github.com/field-trip-planner" target="_blank" rel="noopener noreferrer" 
@@ -81,6 +82,7 @@ export default function MyFieldTripp() {
               Visit Site
           </a>
         </Button>
+        </div>
       </CardActions>
     </Card>
   );

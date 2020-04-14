@@ -42,6 +42,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: inherit;
 }
 a:active,
 a:hover {
@@ -868,7 +869,7 @@ i{
   
 }
 
-a:hover{
-  text-decoration: none;
-  color: #ff0;
+.Button{
+  display: flex;
+  justify-content: space-evenly;
 }

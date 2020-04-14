@@ -9,9 +9,10 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import "devicon"
 
+import { teal } from '@material-ui/core/colors';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import { teal } from '@material-ui/core/colors';
+import LaunchIcon from '@material-ui/icons/Launch';
 
 
 const accent = teal[500]
@@ -21,23 +22,17 @@ const useStyles = makeStyles({
     maxWidth: 450,
   },
   booton:{
-    fontSize:"12px",
-    color: "white",
-    backgroundColor: accent,
+    fontSize:"11px",
+    fontFamily:"Roboto",
+    height:"35px",
+    color: accent,
+    backgroundColor: "white",
     '&:hover': {
       background: "#4ca69c",
       color:"white",
-      variant:"outlined"
+      borderColor:"white"
     }
   },
-  booton2:{
-    color:"white",
-    backgroundColor: accent,
-    '&:hover': {
-      background: "whitesmoke",
-      color: accent
-    }
-  }
 });
 
 export default function UIProject() {
@@ -71,19 +66,26 @@ export default function UIProject() {
       </CardActionArea>
       <CardActions>
         <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
-          <GitHubIcon className="githubIcon"/>
-          <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" style={{textDecorationLine:"none", color:"white"}}>Github</a>
+          <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
+          <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" rel="noopener noreferrer" 
+            style={{textDecorationLine:"none", color:"inherit"}}>
+              Github
+          </a>
         </Button>
         
-        <Button className={classes.booton2} size="small" variant="contained">
-          Learn More
+        <Button className={classes.booton}  size="small" variant="contained">
+          <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
+          More Info
         </Button>
 
         <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
-          <LaptopMacIcon />
-          
-          <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" style={{textDecorationLine:"none", color:"white"}}>deploy</a>
+          <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
+          <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" rel="noopener noreferrer" 
+            style={{textDecorationLine:"none", color:"inherit"}} >
+              deploy
+          </a>
         </Button>
+      
       </CardActions>
     </Card>
   );

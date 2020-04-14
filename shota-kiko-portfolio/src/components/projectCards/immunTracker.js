@@ -9,6 +9,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import { teal } from '@material-ui/core/colors';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 
 const accent = teal[500]
 
@@ -17,7 +19,22 @@ const useStyles = makeStyles({
     maxWidth: 450,
   },
   booton:{
-    color: accent,
+    fontSize:"12px",
+    color: "white",
+    backgroundColor: accent,
+    '&:hover': {
+      background: "#4ca69c",
+      color:"white",
+      variant:"outlined"
+    }
+  },
+  booton2:{
+    color:"white",
+    backgroundColor: accent,
+    '&:hover': {
+      background: "whitesmoke",
+      color: accent
+    }
   }
 });
 
@@ -47,11 +64,19 @@ export default function ImmunTracker() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" variant="outlined" color="secondary">
-          Github
+        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+          <GitHubIcon className="githubIcon"/>
+          <a href="https://github.com/buildweek-immunizationtracker/front-end-architect" target="_blank" style={{textDecorationLine:"none", color:"white"}}>Github</a>
         </Button>
-        <Button className={classes.booton} size="small" variant="outlined" >
+        
+        <Button className={classes.booton2} size="small" variant="contained">
           Learn More
+        </Button>
+
+        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+          <LaptopMacIcon />
+          
+          <a href="https://musing-albattani-db7dc4.netlify.com/index.html" target="_blank" style={{textDecorationLine:"none", color:"white"}}>Visit Site</a>
         </Button>
       </CardActions>
     </Card>

@@ -9,7 +9,7 @@ import Sonic from './projectCards/sonicLambdog'
 import UIProject from './projectCards/uiProject'
 
 const Projects = () => (
-    <section className="projectsPageContainer" id="projects">
+    <section className="projectcontainer-fluid" id="projects">
         <SEO title="Project List" />
         
         <div className="projectHeader">

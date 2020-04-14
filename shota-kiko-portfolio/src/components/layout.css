@@ -840,16 +840,17 @@ i{
 
 /* Projects Section */
 
-.projectsPageContainer{
-  /* border: 2px solid white; */
+.projectcontainer-fluid{
+  border: 2px solid whitesmoke;
   height: 100vh;
+  
 }
 
 .projectHeader{
-  margin-top: 8vh;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  margin-bottom: 4vh;
 }
 
 .projectsCardsContainer{
@@ -863,9 +864,11 @@ i{
   /* border: 2px solid orange; */
   padding:5px;
   width:25%;
+  text-align: start;
   
 }
 
-.card{
-  border: 2px solid green;
+a:hover{
+  text-decoration: none;
+  color: #ff0;
 }

@@ -7,8 +7,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import "devicon"
 
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import { teal } from '@material-ui/core/colors';
+
 
 const accent = teal[500]
 
@@ -17,7 +21,22 @@ const useStyles = makeStyles({
     maxWidth: 450,
   },
   booton:{
-    color: accent,
+    fontSize:"12px",
+    color: "white",
+    backgroundColor: accent,
+    '&:hover': {
+      background: "#4ca69c",
+      color:"white",
+      variant:"outlined"
+    }
+  },
+  booton2:{
+    color:"white",
+    backgroundColor: accent,
+    '&:hover': {
+      background: "whitesmoke",
+      color: accent
+    }
   }
 });
 
@@ -43,7 +62,7 @@ export default function UIProject() {
           <Typography className={classes.sub} color="textSecondary" gutterBottom>
               HTML | CSS | Javascript | Less
           </Typography>
-          
+        
           <Typography variant="body1" component="p">
             A beginner project focused on implementing a clean user interface and responsive design
             for desktop, tablet and mobile devices. Built to design document specifications.
@@ -51,11 +70,19 @@ export default function UIProject() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" variant="outlined" color="secondary">
-          Github
+        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+          <GitHubIcon className="githubIcon"/>
+          <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" style={{textDecorationLine:"none", color:"white"}}>Github</a>
         </Button>
-        <Button className={classes.booton} size="small" variant="outlined" >
+        
+        <Button className={classes.booton2} size="small" variant="contained">
           Learn More
+        </Button>
+
+        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+          <LaptopMacIcon />
+          
+          <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" style={{textDecorationLine:"none", color:"white"}}>deploy</a>
         </Button>
       </CardActions>
     </Card>

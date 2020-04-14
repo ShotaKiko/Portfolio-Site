@@ -40,7 +40,7 @@ const AboutMe = () => (
             
             <div className="iconContainer">
                 <div className="firstRow">
-                    <i className="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
                     <i class="devicon-css3-plain-wordmark colored"></i>
                     <i class="devicon-javascript-plain colored"></i>
                 </div>

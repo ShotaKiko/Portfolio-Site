@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutMe from "../components/aboutMe"
 import Projects from "../components/projects"
+import Contact from "../components/contact"
 // import About from "./about"
 
 
@@ -22,6 +23,7 @@ const IndexPage = () => (
     {/* <About /> */}
     <AboutMe />
     <Projects />
+    <Contact />
   </Layout>
 )
 

@@ -44,7 +44,7 @@ export default function Projects() {
 
     return (
     <section className="projectcontainer-fluid" id="projects">
-        <SEO title="Project List" />
+        <SEO title="Portfolio" />
         
         <div className="projectHeader">
             <h2>Projects</h2>

@@ -60,12 +60,10 @@ export default function ImmunTracker() {
       </CardActionArea>
       <CardActions>
           <div className="cardBootons">
-            <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+            <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/buildweek-immunizationtracker/front-end-architect" 
+              target="mynewtab" rel="noopener noreferrer">
               <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
-              <a href="https://github.com/buildweek-immunizationtracker/front-end-architect" target="_blank" rel="noopener noreferrer" 
-                style={{textDecorationLine:"none", color:"inherit"}}>
                   Github
-              </a>
             </Button>
             
             <Button className={classes.booton} size="small" variant="contained">
@@ -73,12 +71,10 @@ export default function ImmunTracker() {
               More Info
             </Button>
 
-            <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
-              <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
-              <a href="https://musing-albattani-db7dc4.netlify.com/index.html" target="_blank" rel="noopener noreferrer" 
-                style={{textDecorationLine:"none", color:"inherit"}}>
+            <Button className={classes.booton}  size="small" variant="contained" href="https://musing-albattani-db7dc4.netlify.com/index.html" 
+              target="mynewtab" rel="noopener noreferrer" >
+              <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span> 
                   Visit Site
-              </a>
             </Button>
         </div>
       </CardActions>

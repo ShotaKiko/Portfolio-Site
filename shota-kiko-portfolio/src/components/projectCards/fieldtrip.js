@@ -62,12 +62,10 @@ export default function MyFieldTripp() {
       </CardActionArea>
       <CardActions>
       <div className="cardBootons">
-        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+        <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/field-trip-planner" 
+          target="mynewtab" rel="noopener noreferrer">
           <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
-            <a href="https://github.com/field-trip-planner" target="_blank" rel="noopener noreferrer" 
-            style={{textDecorationLine:"none", color:"inherit"}}>
               Github
-            </a>
         </Button>
         
         <Button className={classes.booton} size="small" variant="contained">
@@ -75,12 +73,10 @@ export default function MyFieldTripp() {
           More Info <span style={{visibility:"hidden"}}>i</span>
         </Button>
 
-        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
-          <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
-          <a href="https://myfieldtripp.com/" target="_blank" rel="noopener noreferrer" 
-            style={{textDecorationLine:"none", color:"inherit"}}>
+        <Button className={classes.booton}  size="small" variant="contained" href="https://myfieldtripp.com/"
+            target="mynewtab" rel="noopener noreferrer" >
+            <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
               Visit Site
-          </a>
         </Button>
         </div>
       </CardActions>

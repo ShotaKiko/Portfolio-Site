@@ -64,12 +64,10 @@ export default function Sonic() {
       </CardActionArea>
       <CardActions>
       <div className="cardBootons">
-        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+        <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/Sonic-BW"
+          target="_blank" rel="noopener noreferrer" >
           <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
-          <a href="https://github.com/Sonic-BW" target="_blank" rel="noopener noreferrer" 
-            style={{textDecorationLine:"none", color:"inherit"}}>
               Github
-          </a>
         </Button>
         
         <Button className={classes.booton} size="small" variant="contained">
@@ -77,12 +75,10 @@ export default function Sonic() {
           Learn More
         </Button>
 
-        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+        <Button className={classes.booton}  size="small" variant="contained" 
+          href="https://zealous-poincare-b92bd3.netlify.com" target="mynewtab"rel="noopener noreferrer">
           <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
-          <a href="https://zealous-poincare-b92bd3.netlify.com" target="_blank"
-            style={{textDecorationLine:"none", color:"inherit"}}>
               Visit Site
-          </a>
         </Button>
         </div>
       </CardActions>

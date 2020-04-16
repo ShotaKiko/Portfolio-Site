@@ -66,12 +66,10 @@ export default function UIProject() {
       </CardActionArea>
       <CardActions>
       <div className="cardBootons">
-        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+        <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/ShotaKiko/User-Interface-Project-Week" 
+          target="_blank" rel="noopener noreferrer">
           <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
-          <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" rel="noopener noreferrer" 
-            style={{textDecorationLine:"none", color:"inherit"}}>
               Github
-          </a>
         </Button>
         
         <Button className={classes.booton}  size="small" variant="contained">
@@ -79,12 +77,10 @@ export default function UIProject() {
           More Info
         </Button>
 
-        <Button className={classes.booton}  size="small" variant="contained" href="#contained-buttons">
+        <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/ShotaKiko/User-Interface-Project-Week" 
+          target="_blank" rel="noopener noreferrer">
           <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
-          <a href="https://github.com/ShotaKiko/User-Interface-Project-Week" target="_blank" rel="noopener noreferrer" 
-            style={{textDecorationLine:"none", color:"inherit"}} >
-              deploy
-          </a>
+              deploy site
         </Button>
       </div>
       </CardActions>

@@ -887,4 +887,32 @@ i{
 .Contact{
   border: 3px solid green;
   height: 100vh;
+  margin-top: 5vh;
+}
+
+.contactHeader{
+  display: flex;
+  justify-content: center;
+  margin-top: 11vh;
+}
+
+.theQuestionDiv{
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-top: 9vh;
+}
+
+.contactForm{
+  border: 2px solid steelblue;
+
+  display: flex;
+  justify-content: center;
+}
+
+.arrowButtons{
+  border:2px solid red;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
 }

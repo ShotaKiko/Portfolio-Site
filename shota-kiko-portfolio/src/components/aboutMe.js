@@ -57,7 +57,7 @@ export default function AboutMe() {
                 </div>
                 <div className="text 2">
                     <p>
-                    My work experience as a former scientitst has led me to develop a highly
+                    My work experience as a former scientist has led me to develop a highly
                     analytical and detail oriented approach which in turn I bring to software development.
                     Most recently my time spent as a Team Lead has provided me with valuable skills working 
                     and leading others to complete project objectives and exceed expectations.

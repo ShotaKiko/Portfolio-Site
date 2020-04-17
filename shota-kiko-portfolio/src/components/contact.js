@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import cyan from '@material-ui/core/colors/cyan';
 import { makeStyles } from '@material-ui/core/styles';
 
+import TextFields from './textfields'
+
 const navButtonColor = cyan[700]
 const navButtonHoverColor = cyan[500]
 const buttonBorderColor= cyan[900]
@@ -37,8 +39,20 @@ export default function Contact() {
     const classes = useStyles()
     return(
         <section className="Contact" id="contact">
+                <div className="contactHeader">
+                  <h2>Contact</h2>
+                </div>
+                  
+                <div className="theQuestionDiv">
+                  <p>
+                    Have a question or want to work together?
+                  </p>
+                </div>
+                  
+                <div className="contactForm">
+                  <TextFields />
+                </div>
                 
-                content
                 <div className="arrowButtons">
                 <Link to="projects" activeClass="active" spy={true} smooth={true} duration={1100}>
                     <Button className={classes.navButton1} variant="contained">

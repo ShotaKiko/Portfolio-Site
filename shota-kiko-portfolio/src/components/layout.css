@@ -680,7 +680,7 @@ pre tt:after {
 }
 
 .navlink:hover{
-  color: white;
+  color: whitesmoke;
 }
 
 
@@ -885,15 +885,22 @@ i{
 }
 
 .Contact{
-  border: 3px solid green;
+  border: 3px solid #181E28;
   height: 100vh;
   margin-top: 5vh;
+  
+  background-color:"red";
 }
 
 .contactHeader{
   display: flex;
   justify-content: center;
   margin-top: 11vh;
+  color: #BEBBBB;
+}
+
+.contactHeader:hover{
+  color: whitesmoke;
 }
 
 .theQuestionDiv{
@@ -901,17 +908,22 @@ i{
   display: flex;
   justify-content: center;
   margin-top: 9vh;
+  color: #BEBBBB;
+}
+
+.theQuestionDiv:hover{
+  color: whitesmoke;
 }
 
 .contactForm{
-  border: 2px solid steelblue;
+  /* border: 2px solid steelblue; */
 
   display: flex;
   justify-content: center;
 }
 
 .arrowButtons{
-  border:2px solid red;
+  /* border:2px solid red; */
   display: flex;
   justify-content: center;
   margin-top: 5vh;

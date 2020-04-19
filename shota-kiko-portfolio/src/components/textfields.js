@@ -10,20 +10,21 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      width: '30vw',
+      width: '35vw',
       display:"flex",
-      color: accent,
-      borderColor: "red",
-      textDecorationColor:"red",
-      backgroundColor:"#052738",
+      backgroundColor:"#37766F",
       // backgroundColor:"#08415C",
+      //backgroundColor:"#052738",
       '&:focus': {
-        background: "#4ca69c",
-        color:"white",
-        borderColor:"white"
+      
       }
     },
   },
+  field:{
+    '& > *': {
+      color: "#BEBBBB",
+    },
+  }
 }));
 
 export default function TextFields() {
@@ -31,15 +32,26 @@ export default function TextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <TextField  id="filled-basic" label="Name" variant="filled"  
-        defaultValue="" size="small"
+      <TextField 
+        className={classes.field} 
+          id="filled-basic" 
+          label="Name" 
+          variant="filled"  
+          defaultValue="" 
+          color="primary"
         />
       
-      <TextField color={accent} id="filled-basic" label="Email" variant="filled"  
-        defaultValue="" size="small"
+      <TextField 
+        className={classes.field}
+          id="filled-basic" 
+          label="Email" 
+          variant="filled"  
+          defaultValue="" 
+          color="primary"
         />
       
       <TextField
+        className={classes.field}
           id="filled-multiline-static"
           label="Message"
           multiline
@@ -47,6 +59,7 @@ export default function TextFields() {
           rowsMax={16}
           defaultValue=""
           variant="filled"
+          color="primary"
         />
     </form>
   );

@@ -717,9 +717,9 @@ pre tt:after {
 }
 
 .aboutContainer{
-  /* border: 2px dashed red; */
-  width:100%;
+  width:80%;
   display: flex;
+  margin: 0 auto;
   flex-wrap: wrap;
   height: 100vh;
   
@@ -843,8 +843,11 @@ i{
 /* Projects Section */
 
 .projectcontainer-fluid{
-  border: 1px solid whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   height: 100vh;
+  width: 80%;
   
 }
 
@@ -857,6 +860,7 @@ i{
 
 .projectsCardsContainer{
   /* border: 2px dashed steelblue; */
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

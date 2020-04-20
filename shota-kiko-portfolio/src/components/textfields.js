@@ -2,9 +2,18 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
-import { teal } from '@material-ui/core/colors';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
-const accent = teal[500]
+import { blueGrey } from '@material-ui/core/colors';
+
+
+const fieldTheme = createMuiTheme({
+  palette: {
+    secondary: {
+      main: blueGrey[100],
+    },
+  },
+});
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,11 +22,9 @@ const useStyles = makeStyles((theme) => ({
       width: '35vw',
       display:"flex",
       backgroundColor:"#37766F",
-      // backgroundColor:"#08415C",
-      //backgroundColor:"#052738",
-      '&:focus': {
-      
-      }
+      backgroundColor:"#326c64",
+      backgroundColor:"#08415C",
+      backgroundColor:"#052738",
     },
   },
   field:{
@@ -32,13 +39,15 @@ export default function TextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
+      <ThemeProvider theme={fieldTheme} >
       <TextField 
         className={classes.field} 
           id="filled-basic" 
           label="Name" 
           variant="filled"  
           defaultValue="" 
-          color="primary"
+          color="secondary"
+          backgroundColor="main"
         />
       
       <TextField 
@@ -47,7 +56,7 @@ export default function TextFields() {
           label="Email" 
           variant="filled"  
           defaultValue="" 
-          color="primary"
+          color="secondary"
         />
       
       <TextField
@@ -59,8 +68,9 @@ export default function TextFields() {
           rowsMax={16}
           defaultValue=""
           variant="filled"
-          color="primary"
+          color="secondary"
         />
+        </ThemeProvider>
     </form>
   );
 }

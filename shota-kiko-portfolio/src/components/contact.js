@@ -7,6 +7,7 @@ import cyan from '@material-ui/core/colors/cyan';
 import { makeStyles } from '@material-ui/core/styles';
 
 import TextFields from './textfields'
+import Footer from './footer';
 
 const navButtonColor = cyan[700]
 const navButtonHoverColor = cyan[500]
@@ -40,14 +41,14 @@ export default function Contact() {
                   <TextFields />
                 </div>
                 
-                <div className="arrowButtons">
-
-                <Link to="home" activeClass="active" spy={true} smooth={true} duration={1100}>
-                    <Button className={classes.navButton} variant="contained"> 
-                        <KeyboardCapslockIcon />
-                    </Button>
-                </Link>
+                <div className="arrowButtons" style={{backgroundPositionY:"125%"}}>
+                  <Link to="home" activeClass="active" spy={true} smooth={true} duration={1100}>
+                      <Button className={classes.navButton} variant="contained" size="large"> 
+                          <KeyboardCapslockIcon />
+                      </Button>
+                  </Link>
                 </div>
+                <Footer />
         </section>
     )
 }

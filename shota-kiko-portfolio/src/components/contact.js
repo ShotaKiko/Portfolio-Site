@@ -48,7 +48,10 @@ export default function Contact() {
                       </Button>
                   </Link>
                 </div>
-                <Footer />
+                <div className="footerPosition">
+                  <Footer />
+                </div>
+                
         </section>
     )
 }

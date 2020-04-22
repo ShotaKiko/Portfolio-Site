@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
@@ -11,6 +12,7 @@ const fieldTheme = createMuiTheme({
   palette: {
     secondary: {
       main: blueGrey[100],
+      backgroundColor: "#052738"
     },
   },
 });
@@ -31,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       color: "#BEBBBB",
     },
+  },
+  button:{
+    color:"white",
   }
 }));
 
@@ -38,39 +43,47 @@ export default function TextFields() {
   const classes = useStyles();
 
   return (
-    <form className={classes.root} noValidate autoComplete="off">
-      <ThemeProvider theme={fieldTheme} >
-      <TextField 
-        className={classes.field} 
-          id="filled-basic" 
-          label="Name" 
-          variant="filled"  
-          defaultValue="" 
-          color="secondary"
-          backgroundColor="main"
-        />
-      
-      <TextField 
-        className={classes.field}
-          id="filled-basic" 
-          label="Email" 
-          variant="filled"  
-          defaultValue="" 
-          color="secondary"
-        />
-      
-      <TextField
-        className={classes.field}
-          id="filled-multiline-static"
-          label="Message"
-          multiline
-          rows={8}
-          rowsMax={16}
-          defaultValue=""
-          variant="filled"
-          color="secondary"
-        />
-        </ThemeProvider>
-    </form>
+    <section className="Email">
+      <form className={classes.root} noValidate autoComplete="off">
+        <ThemeProvider theme={fieldTheme} >
+        <TextField 
+          className={classes.field} 
+            id="filled-basic" 
+            label="Name" 
+            variant="filled"  
+            defaultValue="" 
+            color="secondary"
+            backgroundColor="main"
+          />
+        
+        <TextField 
+          className={classes.field}
+            id="filled-basic" 
+            label="Email" 
+            variant="filled"  
+            defaultValue="" 
+            color="secondary"
+          />
+        
+        <TextField
+          className={classes.field}
+            id="filled-multiline-static"
+            label="Message"
+            multiline
+            rows={8}
+            rowsMax={16}
+            defaultValue=""
+            variant="filled"
+            color="secondary"
+          />
+          </ThemeProvider>
+      </form>
+        
+        <div className="footerButtonContainer">
+          <Button className={classes.button} variant="outlined" color="secondary">
+            Submit
+          </Button>
+        </div>
+    </section>
   );
 }

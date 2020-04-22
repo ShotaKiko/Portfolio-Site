@@ -37,21 +37,23 @@ export default function Footer(){
         }}>
                 <div className="footerLinks">
                 
-                    <Button href="https://github.com/ShotaKiko">
+                    <Button href="https://github.com/ShotaKiko" 
+                        target="mynewtab" rel="noopener noreferrer">
                         <GitHubIcon className={classes.icon}
                             fontSize="large"
                             color="primary"                        
                         />
                     </Button>
                     
-                    <Button href="https://www.linkedin.com/in/shotakikozashvili/">
+                    <Button href="https://www.linkedin.com/in/shotakikozashvili/" 
+                        target="mynewtab" rel="noopener noreferrer">
                         <LinkedInIcon className={classes.icon}
                             fontSize="large"
                             color="primary"
                         />
                     </Button>
                     
-                    <Button >
+                    <Button target="mynewtab" rel="noopener noreferrer" >
                         {/* TODO host resume */}
                         <FindInPageIcon  className={classes.icon}
                             fontSize="large"

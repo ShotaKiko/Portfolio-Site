@@ -44,7 +44,7 @@ export default function Projects() {
 
     return (
     <section className="projectcontainer-fluid" id="projects">
-        <div>
+        
         <SEO title="Portfolio" />
         
         <div className="projectHeader">
@@ -80,7 +80,7 @@ export default function Projects() {
                     </Button>
                 </Link>
         </div>
-        </div>
+        
     </section>
   );
 }

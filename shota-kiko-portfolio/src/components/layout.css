@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 article,
 aside,
@@ -717,26 +718,34 @@ pre tt:after {
 }
 
 .aboutContainer{
-  width:80%;
+  /* border:2px solid red; */
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; 
+}
+
+.aboutContent{
+  border: 2px dashed purple;
+  width: 80%;
   display: flex;
   margin: 0 auto;
-  flex-wrap: wrap;
-  height: 100vh;
-  
+  margin-top: 5vh;
+}
+
+.aboutLeftHeader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutLeft{
-  /* border: 2px solid green; */
-  padding: 30px;
+  border: 2px solid green;
   width: 50%;
   height: 80vh;
-  margin-top: 8vh;
-  
-  
   font-size: 1.1vw;
   line-height: 1.6;
-  
-  
 }
 
 .aboutText{
@@ -752,20 +761,19 @@ pre tt:after {
   margin-bottom: 5vh;
 }
 
+.aboutRightHeader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 
 .aboutRight{  
-  /* border: 2px solid blue; */
-  margin-top: 8vh;
+  border: 2px solid blue;
   width: 50%;
   height: 80vh;
 }
 
-.techHeader{
-  /* border: 2px dashed red; */
-  margin-top: 2vh;
-  width: 100%;
-  text-align: center;
-}
 
 .iconContainer{
   display: flex;
@@ -831,6 +839,7 @@ i{
 .aboutLink{
   /* border: 2px solid orange; */
   margin:0 auto;
+  margin-top: 3vh;
   color: #37766F;
   text-decoration: none;
   cursor: pointer;
@@ -843,11 +852,14 @@ i{
 /* Projects Section */
 
 .projectcontainer-fluid{
+  /* border: 2px solid blue; */
+  
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 auto;
   height: 100vh;
-  width: 80%;
+  width: 100%;
   
 }
 
@@ -860,10 +872,10 @@ i{
 
 .projectsCardsContainer{
   /* border: 2px dashed steelblue; */
-  width: 100%;
+  width: 80%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .project{
@@ -886,14 +898,16 @@ i{
   display: flex;
   justify-content: center;
   margin-top: 6vh;
+  margin-bottom: 2vh;
 }
 
 .Contact{
-  border-top: 3px solid #181E28;
-  height: 100vh;
-  margin-top: 5vh;
+  /* border: 2px solid red; */
   
-  background-color:"red";
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contactHeader{
@@ -911,7 +925,7 @@ i{
   font-weight: 600;
   display: flex;
   justify-content: center;
-  margin-top: 9vh;
+  margin-top: 7vh;
   color: #BEBBBB;
 }
 
@@ -930,7 +944,7 @@ i{
   /* border:2px solid red; */
   display: flex;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 4vh;
 
   height: 32px;
   font-size: 35px;
@@ -939,7 +953,6 @@ i{
 .footerContainer{
   background-color:#0c101c;
   width: 100%;
-  height: 22vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -961,4 +974,12 @@ i{
   color: #BEBBBB;
   font-family: "Roboto";
   font-size: .9rem;
+}
+
+.footerButtonContainer{
+  /* border:2px solid white; */
+  margin:0 auto;
+  width: 35vw;
+  display: flex;
+  justify-content: flex-end;
 }

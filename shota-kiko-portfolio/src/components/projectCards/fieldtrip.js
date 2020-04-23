@@ -70,7 +70,7 @@ export default function MyFieldTripp() {
         
         <Button className={classes.booton} size="small" variant="contained">
           <LaunchIcon />
-          More Info <span style={{visibility:"hidden"}}>i</span>
+          Learn More <span style={{visibility:"hidden"}}>i</span>
         </Button>
 
         <Button className={classes.booton}  size="small" variant="contained" href="https://myfieldtripp.com/"

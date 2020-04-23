@@ -68,7 +68,7 @@ export default function ImmunTracker() {
             
             <Button className={classes.booton} size="small" variant="contained">
               <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
-              More Info
+             Learn More
             </Button>
 
             <Button className={classes.booton}  size="small" variant="contained" href="https://musing-albattani-db7dc4.netlify.com/index.html" 

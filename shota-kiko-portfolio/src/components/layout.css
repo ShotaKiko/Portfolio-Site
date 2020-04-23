@@ -630,7 +630,7 @@ pre tt:after {
 
 .navcontainer-fluid{
   background: #37766F;
-  border-bottom: 4px solid #092E2A;
+  border-bottom: 5px solid #092E2A;
   display: flex;
   justify-content: space-between;
   width: 100vw;
@@ -662,29 +662,44 @@ pre tt:after {
   /* border: 3px solid purple; */
 }
 
+
+
 .navContainer{
   /* border: 5px solid green; */
+  height: 100%;
   width: 85%;
   display: flex;
   justify-content: space-around;
   align-items: center;
  
   font-family: "Roboto";
-  color: #e0f7fa;
+  color: #1b1b1b;
   font-size: 1.4rem;
-  
 }
 
 .navlink{
   cursor: pointer;
   text-transform: uppercase;
+  padding-top: .5rem;
 }
 
-.navlink:hover{
+.navContainer .navlink:hover{
   color: whitesmoke;
 }
 
+.navlink.active {
+  border-bottom: 1px solid white;
+  color: whitesmoke;
+}
 
+.navlink:active{
+  /* border-bottom: 1px solid white; */
+  color: whitesmoke;
+}
+
+/* .navContainer .navlink > .active {
+  border-bottom: 1px solid #333;
+} */
 
 .landing{
   background-image: url("../images/landing.jpg");
@@ -727,7 +742,7 @@ pre tt:after {
 }
 
 .aboutContent{
-  border: 2px dashed purple;
+  /* border: 2px dashed purple; */
   width: 80%;
   display: flex;
   margin: 0 auto;
@@ -741,7 +756,7 @@ pre tt:after {
 }
 
 .aboutLeft{
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 50%;
   height: 80vh;
   font-size: 1.1vw;
@@ -769,7 +784,7 @@ pre tt:after {
 
 
 .aboutRight{  
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 50%;
   height: 80vh;
 }

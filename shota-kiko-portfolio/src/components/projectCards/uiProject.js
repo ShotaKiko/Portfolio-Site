@@ -74,7 +74,7 @@ export default function UIProject() {
         
         <Button className={classes.booton}  size="small" variant="contained">
           <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
-          More Info
+          Learn More
         </Button>
 
         <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/ShotaKiko/User-Interface-Project-Week" 

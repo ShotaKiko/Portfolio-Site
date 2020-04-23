@@ -8,32 +8,36 @@ const NavBar = () =>(
         <img className="logoimage" src="https://imagehost.imageupload.net/2020/03/26/logov2.png" alt="logo" onClick={() => scroll.scrollToTop()}/>
         {/* <img src="../images/gatsby-icon.png" alt="test"></img> */}
        </div>
-       <div className="navContainer">
-            <div className="navlink 1">
-                <Link to="home"  smooth={true} duration={1200}>
+       
+
+           <div className="navContainer">
+               
+            
+                <Link  className="navlink 1" to="home" activeClass="active"   smooth={true} duration={1200} >
                     Home
                 </Link>
-            </div>
+            
 
-            <div className="navlink 2">
-                <Link to="about" activeClass="active"  spy={true} smooth={true} duration={1000}>
+            
+                <Link className="navlink" to="about" activeClass="active"  spy={true} smooth={true} duration={1000}>
                     About
                 </Link>
-            </div>
             
-            <div className="navlink 3">
-                <Link to="projects" activeClass="active" spy={true} smooth={true} duration={1000}>
+            
+            
+                <Link className="navlink" to="projects" activeClass="active" spy={true} smooth={true} duration={1000}>
                     Projects
                 </Link>
-            </div>
             
-            <div className="navlink 4">
-                <Link to="contact" activeClass="active" spy={true} smooth={true} duration={1200}>
+            
+            
+                <Link className="navlink" to="contact" activeClass="active" spy={true} smooth={true} duration={1200}>
                     Contact
                 </Link>
-            </div>
+                
+           </div>
             
-       </div>
+      
        <div className="placeholder"></div>
     </div>
 )

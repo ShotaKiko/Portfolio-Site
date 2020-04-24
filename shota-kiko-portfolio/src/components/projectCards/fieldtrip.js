@@ -13,6 +13,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LaunchIcon from '@material-ui/icons/Launch';
 
+import FieldTripModal from './fieldTripModal.js'
+
 const accent = teal[500]
 
 const useStyles = makeStyles({
@@ -68,10 +70,13 @@ export default function MyFieldTripp() {
               Github
         </Button>
         
-        <Button className={classes.booton} size="small" variant="contained">
+
+      <FieldTripModal />
+
+        {/* <Button className={classes.booton} size="small" variant="contained">
           <LaunchIcon />
           Learn More <span style={{visibility:"hidden"}}>i</span>
-        </Button>
+        </Button> */}
 
         <Button className={classes.booton}  size="small" variant="contained" href="https://myfieldtripp.com/"
             target="mynewtab" rel="noopener noreferrer" >

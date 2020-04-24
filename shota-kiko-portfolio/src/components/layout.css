@@ -872,10 +872,12 @@ i{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #d0dbff;
   margin: 0 auto;
   height: 100vh;
   width: 100%;
   
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 }
 
 .projectHeader{
@@ -997,4 +999,19 @@ i{
   width: 35vw;
   display: flex;
   justify-content: flex-end;
+}
+
+/* Modal/ Dialog related Styels*/
+ul li::before {
+  content: "\2022";  
+  color: #4ca69c; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em;
+}
+
+ul li{
+  list-style: none;
+  font-size: .7rem;
 }

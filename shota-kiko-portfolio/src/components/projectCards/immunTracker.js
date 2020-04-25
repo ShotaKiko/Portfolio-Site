@@ -12,6 +12,7 @@ import { teal } from '@material-ui/core/colors';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LaunchIcon from '@material-ui/icons/Launch';
+import ImmunTrackerModal from './immunTrackerModal';
 
 const accent = teal[500]
 
@@ -66,10 +67,12 @@ export default function ImmunTracker() {
                   Github
             </Button>
             
-            <Button className={classes.booton} size="small" variant="contained">
+            {/* <Button className={classes.booton} size="small" variant="contained">
               <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
              Learn More
-            </Button>
+            </Button> */}
+
+            <ImmunTrackerModal />
 
             <Button className={classes.booton}  size="small" variant="contained" href="https://musing-albattani-db7dc4.netlify.com/index.html" 
               target="mynewtab" rel="noopener noreferrer" >

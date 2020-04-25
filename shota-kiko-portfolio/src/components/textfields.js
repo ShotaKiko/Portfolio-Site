@@ -80,7 +80,7 @@ export default function TextFields() {
       </form>
         
         <div className="footerButtonContainer">
-          <Button className={classes.button} variant="outlined" color="secondary">
+          <Button className={classes.button} variant="contained" color="secondary">
             Submit
           </Button>
         </div>

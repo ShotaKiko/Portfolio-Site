@@ -1002,7 +1002,18 @@ i{
 }
 
 /* Modal/ Dialog related Styels*/
-ul li::before {
+
+
+.numba1 li::before {
+  content: "\2022";  
+  color: white; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em;
+}
+
+.numba2 li::before {
   content: "\2022";  
   color: #4ca69c; 
   font-weight: bold; 
@@ -1011,7 +1022,62 @@ ul li::before {
   margin-left: -1em;
 }
 
-ul li{
+ul{
+  width: 80%;
+  border:"2px solid green";
+} 
+
+
+.numba1 li:hover{
+  color:white ;
+}
+
+.modalLeft{
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  background-color: #37766F;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+}
+
+.modalRight{
+  /* border:2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border:.5px solid #37766F;
+  background-color: whitesmoke ;
+}
+
+.numba1 li{
   list-style: none;
-  font-size: .7rem;
+  font-size: .9rem;
+  margin-left: 1vw;
+  color: whitesmoke ;
+  font-family: 'Roboto';
+}
+
+.numba2 li{
+  font-size: .9rem;
+  margin-left: 1vw;
+  color: #37766F;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.modalImage{
+  /* border:2px solid red; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+  margin:0 auto;
 }

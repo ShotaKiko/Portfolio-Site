@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LaunchIcon from '@material-ui/icons/Launch';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
@@ -28,6 +29,9 @@ const styles = (theme) => ({
     right: theme.spacing(1),
     top: theme.spacing(1),
     color: theme.palette.grey[500],
+    '&:hover': {
+      background: "#4ca69c",
+    }
   },
 });
 
@@ -77,11 +81,11 @@ const useStyles = makeStyles({
       }
     },
     headline:{
-      borderBottom:"4px solid #37766F",
+      borderBottom:"4px solid #4ca69c",
       fontSize:"1.4rem",
       // color:"#37766F",
       color:"whitesmoke",
-      backgroundColor:"#4ca69c"
+      backgroundColor:"#37766F",
     },
     image:{
       borderRadius:"7px",
@@ -89,10 +93,33 @@ const useStyles = makeStyles({
     },
     content:{
       display:"flex",
+      justifyContent:"space-around",
       width:"85%",
       margin:"0 auto",
-      
-    }
+      borderBottom:".5px solid #bcbcbc",
+    },
+    imageContent:{
+      display:"flex",
+      justifyContent:"center",
+      // backgroundColor:"#bcbcbc",
+    },
+    subtitle1:{
+      color:"whitesmoke",
+      marginBottom:"0px",
+      '&:hover': {
+        color: "white",
+      }
+    },
+    subtitle2:{
+      color:"#37766F",
+      marginBottom:"0px",
+      '&:hover': {
+        color: "#4ca69c",
+      }
+    },
+    buttonSection:{
+     marginTop:"5px",
+    },
   });
 
 export default function FieldTripModal() {
@@ -116,14 +143,16 @@ export default function FieldTripModal() {
         <DialogTitle id="customized-dialog-title" onClose={handleClose} className={classes.headline}>
           MyFieldTripp
         </DialogTitle>
-            <img className={classes.image} src="https://imagehost.imageupload.net/2020/04/24/fieldtripp-teacher-dashboard.png" style={{width:"80%", margin:"0 auto"}}/>
+        <DialogContent className={classes.imageContent}>
+            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/24/fieldtripp-teacher-dashboard.png" style={{width:"80%", margin:"0 auto"}}/>
+        </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalLeft">
-            <Typography gutterBottom variant="h6" component="h5">
+            <Typography gutterBottom variant="h6" component="h5" className={classes.subtitle1}>
               Features
             </Typography>
             <Typography variant="body2" component="p">
-              <ul>
+              <ul className="numba1">
                     <li>
                         Account creation for teachers and parents of students
                     </li>
@@ -139,18 +168,18 @@ export default function FieldTripModal() {
                 </ul>
               </Typography>
             </div>
-            <div>
-              <Typography gutterBottom variant="h6" component="h5">
+            <div className="modalRight">
+              <Typography gutterBottom variant="h6" component="h5" className={classes.subtitle2}>
                 Contributions
               </Typography>
 
               <Typography gutterBottom variant="body2" component="p">
-                <ul>
+                <ul className="numba2">
                     <li>
                         Led group pair programming sessions to design database architecture
                     </li>
                     <li>
-                        Helped build out api endpoints for retrieving student/parent tied data
+                        Helped build out API endpoints for retrieving student/parent tied data
                     </li>
                     <li>
                         Designed and developed onboarding flow for new users
@@ -162,7 +191,7 @@ export default function FieldTripModal() {
               </Typography>
             </div>
         </DialogContent>
-        <DialogActions>
+        <DialogActions className={classes.buttonSection}>
             <Button className={classes.booton} size="small" variant="contained" href="https://github.com/field-trip-planner" 
             target="mynewtab" rel="noopener noreferrer">
             <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
@@ -174,6 +203,7 @@ export default function FieldTripModal() {
                 Visit Site
             </Button>
           <Button className={classes.booton} autoFocus onClick={handleClose}  size="small" variant="contained">
+            <ExitToAppIcon />
             Return
           </Button>
         </DialogActions>

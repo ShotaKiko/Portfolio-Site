@@ -12,6 +12,7 @@ import { teal } from '@material-ui/core/colors';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LaunchIcon from '@material-ui/icons/Launch';
+import SonicLambdogModal from './sonicLambdogModal';
 
 const accent = teal[500]
 
@@ -69,11 +70,13 @@ export default function Sonic() {
           <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
               Github
         </Button>
+
+        <SonicLambdogModal />
         
-        <Button className={classes.booton} size="small" variant="contained">
+        {/* <Button className={classes.booton} size="small" variant="contained">
           <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
           Learn More
-        </Button>
+        </Button> */}
 
         <Button className={classes.booton}  size="small" variant="contained" 
           href="https://zealous-poincare-b92bd3.netlify.com" target="mynewtab"rel="noopener noreferrer">

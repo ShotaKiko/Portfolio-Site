@@ -13,6 +13,7 @@ import { teal } from '@material-ui/core/colors';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LaunchIcon from '@material-ui/icons/Launch';
+import UIProjectModal from './uiProjectModal';
 
 
 const accent = teal[500]
@@ -72,10 +73,11 @@ export default function UIProject() {
               Github
         </Button>
         
-        <Button className={classes.booton}  size="small" variant="contained">
+        {/* <Button className={classes.booton}  size="small" variant="contained">
           <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
           Learn More
-        </Button>
+        </Button> */}
+        <UIProjectModal />
 
         <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/ShotaKiko/User-Interface-Project-Week" 
           target="_blank" rel="noopener noreferrer">

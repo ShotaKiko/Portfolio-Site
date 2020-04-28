@@ -761,19 +761,41 @@ pre tt:after {
   height: 80vh;
   font-size: 1.1vw;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.profilePic{
+  /* border:2px dashed green; */
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.profilePicContainer{
+  /* border:2px solid red; */
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
 }
 
 .aboutText{
   /* border:2px solid dodgerblue; */
-  width: 80%;
+  width: 95%;
   margin:0 auto;
-  padding: 5px;
   text-align: justify;
+  font-size: .9rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 15px;
+  padding-right: 20px;
+  border: 2px solid #37766F;
 }
 
 .text{
-  margin-top: 4vh;
-  margin-bottom: 5vh;
+  font-weight: 600;
 }
 
 .aboutRightHeader{
@@ -787,12 +809,15 @@ pre tt:after {
   /* border: 2px solid blue; */
   width: 50%;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
 
 .iconContainer{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 4vh;
 }
 
 .firstRow{
@@ -1055,7 +1080,7 @@ ul{
   padding-top: 5px;
   padding-left: 20px;
   padding-bottom: 20px;
-  border:.5px solid #37766F;
+  border: 1px solid #37766F;
   background-color: whitesmoke ;
 }
 

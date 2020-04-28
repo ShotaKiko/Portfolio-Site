@@ -48,6 +48,9 @@ export default function AboutMe() {
                         {/* Quote? */}
                         </h3>
                     </div>
+                    <div className="profilePicContainer">
+                        <img className="profilePic" src="https://imagehost.imageupload.net/2020/04/28/profilepic-placeholder.jpg" alt="Shota Kiko"/>
+                    </div>
                     <div className="aboutText">
                         
                         <div className="text 1">

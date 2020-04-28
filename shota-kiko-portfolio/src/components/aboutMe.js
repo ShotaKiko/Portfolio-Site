@@ -48,32 +48,33 @@ export default function AboutMe() {
                         {/* Quote? */}
                         </h3>
                     </div>
-                    <div className="profilePicContainer">
-                        <img className="profilePic" src="https://imagehost.imageupload.net/2020/04/28/profilepic-placeholder.jpg" alt="Shota Kiko"/>
-                    </div>
-                    <div className="aboutText">
-                        
-                        <div className="text 1">
-                            <p>
-                            I am a Full Stack Developer with experience building both front and backend 
-                            architectures for a variety of applications. 
-                            I am a fast learner, quick to build upon on my existing knowledge and resourceful 
-                            in finding ways to bridge the gaps in my understanding.
-                            </p>
-                        </div>
-                        <div className="text 2">
-                            <p>
-                            My work experience as a former scientist has led me to develop a highly
-                            analytical and detail oriented approach which in turn I bring to software development.
-                            Most recently my time spent as a Team Lead has provided me with valuable skills working 
-                            and leading others to complete project objectives and exceed expectations.
-                            </p>
-                        </div>
-                        <div className="text 3">
-                            <p>
-                            I am constantly curious and learning about new technologies, 
-                            excited to apply all that I learn toward building solutions for real world problems.
-                            </p>
+                        <div className="aboutText">
+                            <div className="profilePicContainer">
+                                <img className="profilePic" src="https://imagehost.imageupload.net/2020/04/28/profilepic-placeholder.jpg" alt="Shota Kiko"/>
+                            </div>
+                        <div className="textCard">
+                                <div className="text 1">
+                                    <p>
+                                    I am a Full Stack Developer with experience building both front and backend 
+                                    architectures for a variety of applications. 
+                                    I am a fast learner, quick to build upon on my existing knowledge and resourceful 
+                                    in finding ways to bridge the gaps in my understanding.
+                                    </p>
+                                </div>
+                                <div className="text 2">
+                                    <p>
+                                    My work experience as a former scientist has led me to develop a highly
+                                    analytical and detail oriented approach which I bring to software development.
+                                    Most recently, my time spent as a Team Lead has provided me with valuable skills working 
+                                    and leading others to complete project objectives and exceed expectations.
+                                    </p>
+                                </div>
+                                <div className="text 3">
+                                    <p>
+                                    I am constantly curious and learning about new technologies and 
+                                    excited to apply all that I learn toward building solutions for real world problems.
+                                    </p>
+                                </div>
                         </div>
 
                     </div>

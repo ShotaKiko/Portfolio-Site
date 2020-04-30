@@ -20,7 +20,7 @@ const Landing = () => (
                 </h2>
             </Tween>
             <Tween from={{opacity: 0, duration: 7, x: 300}}>
-                <div>
+                <div style={{marginLeft:"32%"}}>
                     <Link className="learnMore" activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
                         <Button color="info">
                             Learn More <ArrowForwardIcon />

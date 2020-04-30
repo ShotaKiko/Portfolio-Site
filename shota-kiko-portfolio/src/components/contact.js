@@ -27,17 +27,17 @@ export default function Contact() {
     const classes = useStyles()
     return(
         <section className="Contact" id="contact" style={{backgroundColor:"#181E28"}}>
-                <div className="contactHeader">
+                <div className="contactHeader" >
                   <h2>Contact</h2>
                 </div>
                   
-                <div className="theQuestionDiv">
+                <div className="theQuestionDiv" >
                   <p>
                     Have a question or want to work together?
                   </p>
                 </div>
                   
-                <div className="contactForm">
+                <div className="contactForm" data-aos="zoom-in-up">
                   <TextFields />
                 </div>
                 

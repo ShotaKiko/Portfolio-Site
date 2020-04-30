@@ -13,6 +13,7 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Button from '@material-ui/core/Button';
 import cyan from '@material-ui/core/colors/cyan';
 import { makeStyles } from '@material-ui/core/styles';
+import 'aos/dist/aos.css';
 
 const navButtonColor = cyan[700]
 const navButtonHoverColor = cyan[500]
@@ -52,16 +53,16 @@ export default function Projects() {
         </div>
        
        <div className="projectsCardsContainer">
-        <div className="project 1">
+        <div className="project 1" data-aos="fade-down">
             <UIProject />
         </div>
-        <div className="project 2">
+        <div className="project 2" data-aos="fade-up">
             <ImmunTracker />
         </div>
-        <div className="project 3">
+        <div className="project 3" data-aos="fade-down">
             <MyFieldTrip />
         </div>
-        <div className="project 4">
+        <div className="project 4" data-aos="fade-up">
             <Sonic />  
         </div>
        </div>

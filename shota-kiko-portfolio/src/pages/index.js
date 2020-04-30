@@ -10,6 +10,14 @@ import Projects from "../components/projects"
 import Contact from "../components/contact"
 // import About from "./about"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+  delay: 100,
+  duration:1000,
+})
+
 
 const IndexPage = () => (
   <Layout>

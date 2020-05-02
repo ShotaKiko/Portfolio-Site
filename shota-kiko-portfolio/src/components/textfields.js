@@ -44,7 +44,7 @@ export default function TextFields() {
 
   return (
     <section className="Email">
-      <form className={classes.root} noValidate autoComplete="off">
+      <form className={classes.root} noValidate autoComplete="off" action="POST" data-netlify="true">
         <ThemeProvider theme={fieldTheme} >
         <TextField 
           className={classes.field} 
@@ -54,6 +54,7 @@ export default function TextFields() {
             defaultValue="" 
             color="secondary"
             backgroundColor="main"
+            name="name"
           />
         
         <TextField 
@@ -63,6 +64,7 @@ export default function TextFields() {
             variant="filled"  
             defaultValue="" 
             color="secondary"
+            name="emial"
           />
         
         <TextField
@@ -75,7 +77,10 @@ export default function TextFields() {
             defaultValue=""
             variant="filled"
             color="secondary"
+            name="message"
           />
+
+          <div data-netlify-recaptcha="true"></div>
           </ThemeProvider>
       </form>
         

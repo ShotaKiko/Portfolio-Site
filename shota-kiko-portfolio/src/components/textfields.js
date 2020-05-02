@@ -11,7 +11,7 @@ import { blueGrey } from '@material-ui/core/colors';
 const fieldTheme = createMuiTheme({
   palette: {
     secondary: {
-      main: blueGrey[100],
+      main: blueGrey[200],
       backgroundColor: "#052738"
     },
   },

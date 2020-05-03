@@ -61,6 +61,7 @@ public/icons/
 public/page-data/
 public/static/
 public/manifest.webmanifest
+public/
 
 # Mac files
 .DS_Store

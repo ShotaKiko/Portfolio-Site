@@ -53,16 +53,16 @@ export default function Projects() {
         </div>
        
        <div className="projectsCardsContainer">
-        <div className="project 1" data-aos="fade-down">
+        <div className="project 1">
             <UIProject />
         </div>
-        <div className="project 2" data-aos="fade-up">
+        <div className="project 2">
             <ImmunTracker />
         </div>
-        <div className="project 3" data-aos="fade-down">
+        <div className="project 3">
             <MyFieldTrip />
         </div>
-        <div className="project 4" data-aos="fade-up">
+        <div className="project 4">
             <Sonic />  
         </div>
        </div>

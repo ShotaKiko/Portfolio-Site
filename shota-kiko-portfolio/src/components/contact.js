@@ -37,7 +37,7 @@ export default function Contact() {
                   </p>
                 </div>
                   
-                <div className="contactForm" data-aos="zoom-in-up">
+                <div className="contactForm">
                   <TextFields />
                 </div>
                 

@@ -40,7 +40,7 @@ export default function AboutMe() {
         <section className="aboutContainer" id="about">
         <SEO title="About" />  
             <div className="aboutContent">     
-                <div className="aboutLeft" data-aos="fade-right">
+                <div className="aboutLeft">
                     <div className="aboutLeftHeader">
                         <h3>
                         About
@@ -79,7 +79,7 @@ export default function AboutMe() {
                     </div>
                 </div>
         
-                <div className="aboutRight" data-aos="fade-left">
+                <div className="aboutRight">
                     <div className="aboutRightHeader">
                         <h3>Technologies</h3>
                     </div>

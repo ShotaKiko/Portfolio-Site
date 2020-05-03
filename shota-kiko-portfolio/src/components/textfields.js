@@ -23,9 +23,6 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       width: '35vw',
       display:"flex",
-      backgroundColor:"#37766F",
-      backgroundColor:"#326c64",
-      backgroundColor:"#08415C",
       backgroundColor:"#052738",
     },
   },
@@ -44,8 +41,9 @@ export default function TextFields() {
 
   return (
     <section className="Email">
-      <form className={classes.root} noValidate autoComplete="off" action="POST" data-netlify="true">
+      <form className={classes.root} noValidate autoComplete="off" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <ThemeProvider theme={fieldTheme} >
+        <input type="hidden" name="form-name" value="contact" />
         <TextField 
           className={classes.field} 
             id="filled-basic" 
@@ -82,13 +80,13 @@ export default function TextFields() {
 
           <div data-netlify-recaptcha="true"></div>
           </ThemeProvider>
-      </form>
-        
-        <div className="footerButtonContainer">
-          <Button className={classes.button} variant="contained" color="secondary">
+        <div className="footerButtonContainer" style={{backgroundColor:"#181E28"}}>
+          <Button className={classes.button} variant="contained" color="secondary" type="submit">
             Submit
           </Button>
         </div>
+      </form>
+        
     </section>
   );
 }

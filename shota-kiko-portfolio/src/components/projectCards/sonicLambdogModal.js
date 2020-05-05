@@ -157,7 +157,7 @@ export default function SonicLambdogModal() {
                         User onboarding functionality in order to view other players in same room
                     </li>
                     <li>
-                        100+ room maze generating algortihm traversable from start to finish
+                        100+ room maze generating algorithm traversable from start to finish
                     </li>
                     <li>
                         Player and room status updates reflected on UI
@@ -176,7 +176,7 @@ export default function SonicLambdogModal() {
               <Typography gutterBottom variant="body2" component="p">
                 <ul className="numba1">
                     <li>
-                        Led the development of the maze and room generating algortihm
+                        Led the development of the maze and room generating algorithm
                     </li>
                     <li>
                         Built out backend and endpoints for player movement using Django

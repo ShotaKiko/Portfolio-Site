@@ -79,10 +79,10 @@ export default function UIProject() {
         </Button> */}
         <UIProjectModal />
 
-        <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/ShotaKiko/User-Interface-Project-Week" 
+        <Button className={classes.booton}  size="small" variant="contained" href="https://reverent-poincare-59e1bb.netlify.app/index.html" 
           target="_blank" rel="noopener noreferrer">
           <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
-              deploy site
+              Visit Site
         </Button>
       </div>
       </CardActions>

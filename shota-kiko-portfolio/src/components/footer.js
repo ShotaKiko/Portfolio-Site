@@ -53,8 +53,7 @@ export default function Footer(){
                         />
                     </Button>
                     
-                    <Button target="mynewtab" rel="noopener noreferrer" >
-                        {/* TODO host resume */}
+                    <Button target="mynewtab" rel="noopener noreferrer" href="https://www.scribd.com/document/459879096/Shota-s-Resume-Software-Developer" >
                         <FindInPageIcon  className={classes.icon}
                             fontSize="large"
                             color="primary"

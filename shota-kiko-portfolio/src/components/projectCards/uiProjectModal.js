@@ -176,7 +176,7 @@ export default function UIProjectModal() {
               <Typography gutterBottom variant="body2" component="p">
                 <ul className="numba2">
                     <li>
-                        Earky solo project built in less than a week's time with dry semantic HTML
+                        Early solo project built in less than a week's time with dry semantic HTML
                     </li>
                     <li>
                         Hosted on Netlify with integrated Github continuous deployment
@@ -197,10 +197,10 @@ export default function UIProjectModal() {
             <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
                 Github
             </Button>
-            <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/ShotaKiko/User-Interface-Project-Week" 
+            <Button className={classes.booton}  size="small" variant="contained" href="https://reverent-poincare-59e1bb.netlify.app/index.html" 
             target="_blank" rel="noopener noreferrer">
             <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
-                deploy site
+                Visit Site
             </Button>
             <Button className={classes.booton} autoFocus onClick={handleClose}  size="small" variant="contained">
              <ExitToAppIcon />

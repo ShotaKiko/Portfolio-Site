@@ -43,7 +43,6 @@ export default function Sonic() {
         <CardMedia
           component="img"
           alt="sonicthelambdog"
-          height="300"
           image="https://imagehost.imageupload.net/2020/04/12/sonic-lambdog.png"
           title="Sonic the Lambdog"
         />
@@ -56,7 +55,7 @@ export default function Sonic() {
               Python | Django | React | Semantic UI
           </Typography>
           
-          <Typography variant="body1" component="p">
+          <Typography variant="body2" component="p">
             Sonic the Lambdog features a room generation algorithm. Users
             can sign up and attempt to traverse through the labyrinth while viewing other players
             in the same room.

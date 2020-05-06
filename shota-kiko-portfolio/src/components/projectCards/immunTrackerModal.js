@@ -67,11 +67,15 @@ const useStyles = makeStyles({
       maxWidth: 450,
     },
     booton:{
-      fontSize:"11px",
+      fontSize:".7vw",
       fontFamily:"Roboto",
-      height:"35px",
+      // height:"35px",
+      lineHeight:"1.8",
       color: accent,
       backgroundColor: "white",
+      display:"flex",
+      justifyContent:"space-evenly",
+      alignItems:"center",
       '&:hover': {
         background: "#4ca69c",
         color:"white",
@@ -155,7 +159,7 @@ export default function ImmunTrackerModal() {
                         Separate registration and logins for patient and medical provider users
                     </li>
                     <li>
-                        Functionaly for patient accounts to add dependents under their profile
+                        Functionality for patient accounts to add dependents under their profile
                     </li>
                     <li>
                         Ability for medical providers to update respective patient immunization records

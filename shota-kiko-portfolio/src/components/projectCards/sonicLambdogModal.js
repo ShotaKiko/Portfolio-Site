@@ -163,7 +163,7 @@ export default function SonicLambdogModal() {
                         Player and room status updates reflected on UI
                     </li>
                     <li>
-                        Persistance of users room location in the maze even upon player logout
+                        Persistence of users room location in the maze even upon player logout
                     </li>
                 </ul>
               </Typography>

@@ -20,8 +20,18 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 450,
   },
+  header:{
+    fontSize:"1.6vw",
+    marginTop:"-30px",
+  },
+  sub:{
+    fontSize:"1vw",
+  },
+  cardText:{
+    fontSize:"max(.9vw, 10px)",
+  },
   booton:{
-    fontSize:"11px",
+    fontSize:".7vw",
     fontFamily:"Roboto",
     height:"35px",
     color: accent,
@@ -42,19 +52,19 @@ export default function ImmunTracker() {
       <CardActionArea>
         <CardMedia
           component="img"
+          height="220px"
           alt="immunizationTracker"
-          height="300"
           image="https://imagehost.imageupload.net/2020/04/12/immunizationtracker.png"
           title="Immunization Tracker"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" className={classes.header}>
           Immunization Tracker
           </Typography>
 
           <Typography className={classes.sub} color="textSecondary" gutterBottom>React | Redux | Bootstrap | Node </Typography>
           
-          <Typography variant="body1" component="p">
+          <Typography variant="body2" component="p" className={classes.cardText}>
           ImmuTrack is designed to help reduce hassle and potential stress through the provision of a centralized and streamlined resource with which to track all of your immunization needs.
           </Typography>
         </CardContent>
@@ -63,7 +73,7 @@ export default function ImmunTracker() {
           <div className="cardBootons">
             <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/buildweek-immunizationtracker/front-end-architect" 
               target="mynewtab" rel="noopener noreferrer">
-              <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
+              <GitHubIcon className="githubIcon" fontSize="small"/> <span style={{visibility:"hidden"}}>i</span>
                   Github
             </Button>
             
@@ -77,7 +87,7 @@ export default function ImmunTracker() {
             <Button className={classes.booton}  size="small" variant="contained" href="https://musing-albattani-db7dc4.netlify.com/index.html" 
               target="mynewtab" rel="noopener noreferrer" >
               <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span> 
-                  Visit Site
+                  Site
             </Button>
         </div>
       </CardActions>

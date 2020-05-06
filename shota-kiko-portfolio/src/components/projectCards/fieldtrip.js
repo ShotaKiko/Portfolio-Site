@@ -44,7 +44,6 @@ export default function MyFieldTripp() {
         <CardMedia
           component="img"
           alt="fieldtripp"
-          height="300"
           image="https://imagehost.imageupload.net/2020/04/07/myfieldtripp.png"
           title="Field Trip Planner"
         />
@@ -55,7 +54,7 @@ export default function MyFieldTripp() {
 
           <Typography className={classes.sub} color="textSecondary" gutterBottom>ReactN | Node | Postgres | Passport.js</Typography>
           
-          <Typography variant="body1" component="p">
+          <Typography variant="body2" component="p">
             MyFieldTripp is a dependable field trip planner
             that helps teachers bring back the joy of field trips. 
             The app allows you to keep track of field trips and participants.

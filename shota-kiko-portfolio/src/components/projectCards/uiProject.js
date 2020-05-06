@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   booton:{
     fontSize:"11px",
     fontFamily:"Roboto",
-    height:"35px",
+    // height:"35px",
     color: accent,
     backgroundColor: "white",
     '&:hover': {
@@ -45,8 +45,6 @@ export default function UIProject() {
         <CardMedia
           component="img"
           alt="sonicthelambdog"
-          height="300"
-        //   TODO update image for card
           image="https://imagehost.imageupload.net/2020/04/12/ui-project.png"
           title="User Interface Project "
         />
@@ -59,7 +57,7 @@ export default function UIProject() {
               HTML | CSS | Javascript | Less
           </Typography>
         
-          <Typography variant="body1" component="p">
+          <Typography variant="body2" component="p">
             A beginner project focused on implementing a clean user interface and responsive design
             for desktop, tablet and mobile devices. Built to design document specifications.
           </Typography>

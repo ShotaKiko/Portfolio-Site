@@ -69,7 +69,7 @@ const useStyles = makeStyles({
       maxWidth: 450,
     },
     booton:{
-      fontSize:"11px",
+      fontSize:".7vw",
       fontFamily:"Roboto",
       height:"35px",
       color: accent,
@@ -199,7 +199,7 @@ export default function SonicLambdogModal() {
             </Button>
             <Button className={classes.booton}  size="small" variant="contained" 
             href="https://zealous-poincare-b92bd3.netlify.com" target="mynewtab"rel="noopener noreferrer">
-            <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
+            <LaptopMacIcon /> <span style={{visibility:"hidden"}}>ii</span>
                 Visit Site
             </Button>
             <Button className={classes.booton} autoFocus onClick={handleClose}  size="small" variant="contained">

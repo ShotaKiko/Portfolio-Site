@@ -19,12 +19,26 @@ const accent = teal[500]
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 450,
+    textAlign:"initial"
+  },
+  header:{
+    fontSize:"1.2rem",
+  },
+  media:{
+    height:"23vh",
+  },
+  sub:{
+    fontSize:".9rem",
+  },
+  cardText:{
+    fontSize:".9rem",
+  },
+  content:{
+    // marginTop:"-20px",
   },
   booton:{
-    fontSize:"11px",
+    fontSize:".7vw",
     fontFamily:"Roboto",
-    height:"35px",
     color: accent,
     backgroundColor: "white",
     '&:hover': {
@@ -41,23 +55,23 @@ export default function MyFieldTripp() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
+        <CardMedia className={classes.media}
           component="img"
           alt="fieldtripp"
           image="https://imagehost.imageupload.net/2020/04/07/myfieldtripp.png"
           title="Field Trip Planner"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-          MyFieldTripp
+        <CardContent className={classes.content}>
+          <Typography gutterBottom variant="h5" component="h2" className={classes.header}>
+          MyFieldTripp Planner
           </Typography>
 
-          <Typography className={classes.sub} color="textSecondary" gutterBottom>ReactN | Node | Postgres | Passport.js</Typography>
+          <Typography className={classes.sub} color="textSecondary" gutterBottom>ReactN | Node | Postgres </Typography>
           
-          <Typography variant="body2" component="p">
-            MyFieldTripp is a dependable field trip planner
+          <Typography variant="body2" component="p" className={classes.cardText}>
+            MyFieldTripp is a dependable field trip planner application
             that helps teachers bring back the joy of field trips. 
-            The app allows you to keep track of field trips and participants.
+            The app allows you to create and keep track of field trips and participants.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -65,7 +79,7 @@ export default function MyFieldTripp() {
       <div className="cardBootons">
         <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/field-trip-planner" 
           target="mynewtab" rel="noopener noreferrer">
-          <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
+          <GitHubIcon className="githubIcon" fontSize="small"/> <span style={{visibility:"hidden"}}>i</span>
               Github
         </Button>
         
@@ -79,7 +93,7 @@ export default function MyFieldTripp() {
 
         <Button className={classes.booton}  size="small" variant="contained" href="https://myfieldtripp.com/"
             target="mynewtab" rel="noopener noreferrer" >
-            <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
+            <LaptopMacIcon /> <span style={{visibility:"hidden"}}>iii</span>
               Visit Site
         </Button>
         </div>

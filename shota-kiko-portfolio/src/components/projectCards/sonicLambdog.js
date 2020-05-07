@@ -18,10 +18,25 @@ const accent = teal[500]
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 450,
+    textAlign:"initial"
+  },
+  header:{
+    fontSize:"1.2rem",
+  },
+  media:{
+    height:"23vh",
+  },
+  sub:{
+    fontSize:".9rem",
+  },
+  cardText:{
+    fontSize:".9rem",
+  },
+  content:{
+    // marginTop:"-20px",
   },
   booton:{
-    fontSize:"11px",
+    fontSize:".7vw",
     fontFamily:"Roboto",
     height:"35px",
     color: accent,
@@ -40,23 +55,23 @@ export default function Sonic() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
+        <CardMedia className={classes.media}
           component="img"
           alt="sonicthelambdog"
           image="https://imagehost.imageupload.net/2020/04/12/sonic-lambdog.png"
           title="Sonic the Lambdog"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" className={classes.header}>
           Sonic the Lambdog
           </Typography>
 
           <Typography className={classes.sub} color="textSecondary" gutterBottom>
-              Python | Django | React | Semantic UI
+              Python | Django | React 
           </Typography>
           
-          <Typography variant="body2" component="p">
-            Sonic the Lambdog features a room generation algorithm. Users
+          <Typography variant="body2" component="p" className={classes.cardText}>
+            Sonic the Lambdog features a custom room generation algorithm. Users
             can sign up and attempt to traverse through the labyrinth while viewing other players
             in the same room.
           </Typography>

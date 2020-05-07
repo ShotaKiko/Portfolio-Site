@@ -925,18 +925,19 @@ i{
 }
 
 .projectsCardsContainer{
-  border: 2px dashed steelblue;
-  width: 90%;
+  /* border: 2px dashed steelblue; */
+  width: 95%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 
 .project{
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   padding:5px;
-  width:25%;
+  width:35%;
   text-align: start;
+  height: 100%;
   
 }
 
@@ -1075,7 +1076,6 @@ ul{
   flex-direction: column;
   width: 47.5%;
   background-color: #37766F;
-  padding-top: 5px;
   padding-left: 15px;
   padding-bottom: 20px;
   border-radius: 6px;
@@ -1089,7 +1089,6 @@ ul{
   width: 47.5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
   border-radius: 6px;
-  padding-top: 5px;
   padding-left: 20px;
   padding-bottom: 20px;
   border: 1px solid #37766F;
@@ -1098,20 +1097,21 @@ ul{
 
 .numba1 li{
   list-style: none;
-  font-size: .9rem;
+  font-size: calc(0.5em + .5vmin);
   margin-left: 1vw;
   color: whitesmoke ;
   font-family: 'Roboto';
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .numba2 li{
-  font-size: .9rem;
+  list-style: none;
+  font-size: calc(0.5em + .5vmin);
   margin-left: 1vw;
   color: #37766F;
   font-family: 'Roboto';
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .modalImage{
@@ -1119,6 +1119,7 @@ ul{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
   border-radius: 6px;
   margin:0 auto;
+  width: 80%;
 }
 
 /* Change autocomplete styles in WebKit */

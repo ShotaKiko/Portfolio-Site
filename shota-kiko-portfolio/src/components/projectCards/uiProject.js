@@ -20,10 +20,25 @@ const accent = teal[500]
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 450,
+    textAlign:"initial",
+  },
+  header:{
+    fontSize:"1.2rem",
+  },
+  media:{
+    height:"23vh",
+  },
+  sub:{
+    fontSize:".9rem",
+  },
+  cardText:{
+    fontSize:".9rem",
+  },
+  content:{
+    // marginTop:"-20px",
   },
   booton:{
-    fontSize:"11px",
+    fontSize:".7vw",
     fontFamily:"Roboto",
     // height:"35px",
     color: accent,
@@ -42,14 +57,14 @@ export default function UIProject() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
+        <CardMedia className={classes.media}
           component="img"
           alt="sonicthelambdog"
           image="https://imagehost.imageupload.net/2020/04/12/ui-project.png"
           title="User Interface Project "
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" className={classes.header}>
             User Interface Project
           </Typography>
 
@@ -57,9 +72,9 @@ export default function UIProject() {
               HTML | CSS | Javascript | Less
           </Typography>
         
-          <Typography variant="body2" component="p">
-            A beginner project focused on implementing a clean user interface and responsive design
-            for desktop, tablet and mobile devices. Built to design document specifications.
+          <Typography variant="body2" component="p" className={classes.cardText}>
+            An beginner project focused on implementing a clean user interface and responsive design
+            for desktop, tablet and mobile devices. Built to precisely match design documents.
           </Typography>
         </CardContent>
       </CardActionArea>

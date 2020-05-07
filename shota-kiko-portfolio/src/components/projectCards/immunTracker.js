@@ -18,22 +18,26 @@ const accent = teal[500]
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 450,
+    textAlign:"initial"
   },
   header:{
-    fontSize:"1.6vw",
-    marginTop:"-30px",
+    fontSize:"1.2rem",
   },
   sub:{
-    fontSize:"1vw",
+    fontSize:".9rem",
   },
   cardText:{
-    fontSize:"max(.9vw, 10px)",
+    fontSize:".9rem",
+  },
+  content:{
+
+  },
+  media:{
+    height:"23vh",
   },
   booton:{
     fontSize:".7vw",
     fontFamily:"Roboto",
-    height:"35px",
     color: accent,
     backgroundColor: "white",
     '&:hover': {
@@ -50,19 +54,18 @@ export default function ImmunTracker() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
+        <CardMedia className={classes.media}
           component="img"
-          height="220px"
           alt="immunizationTracker"
           image="https://imagehost.imageupload.net/2020/04/12/immunizationtracker.png"
           title="Immunization Tracker"
         />
-        <CardContent>
+        <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2" className={classes.header}>
           Immunization Tracker
           </Typography>
 
-          <Typography className={classes.sub} color="textSecondary" gutterBottom>React | Redux | Bootstrap | Node </Typography>
+          <Typography className={classes.sub} color="textSecondary" gutterBottom>React | Redux | Node </Typography>
           
           <Typography variant="body2" component="p" className={classes.cardText}>
           ImmuTrack is designed to help reduce hassle and potential stress through the provision of a centralized and streamlined resource with which to track all of your immunization needs.
@@ -76,18 +79,13 @@ export default function ImmunTracker() {
               <GitHubIcon className="githubIcon" fontSize="small"/> <span style={{visibility:"hidden"}}>i</span>
                   Github
             </Button>
-            
-            {/* <Button className={classes.booton} size="small" variant="contained">
-              <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
-             Learn More
-            </Button> */}
 
             <ImmunTrackerModal />
 
             <Button className={classes.booton}  size="small" variant="contained" href="https://musing-albattani-db7dc4.netlify.com/index.html" 
               target="mynewtab" rel="noopener noreferrer" >
-              <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span> 
-                  Site
+              <LaptopMacIcon /> <span style={{visibility:"hidden"}}>iiI</span> 
+                 Visit Site
             </Button>
         </div>
       </CardActions>

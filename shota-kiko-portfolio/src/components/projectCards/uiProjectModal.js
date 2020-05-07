@@ -69,7 +69,7 @@ const useStyles = makeStyles({
       maxWidth: 450,
     },
     booton:{
-      fontSize:"11px",
+      fontSize:".7vw",
       fontFamily:"Roboto",
       // height:"35px",
       color: accent,

@@ -69,8 +69,6 @@ const useStyles = makeStyles({
     booton:{
       fontSize:".7vw",
       fontFamily:"Roboto",
-      // height:"35px",
-      lineHeight:"1.8",
       color: accent,
       backgroundColor: "white",
       display:"flex",
@@ -103,6 +101,7 @@ const useStyles = makeStyles({
     imageContent:{
       display:"flex",
       justifyContent:"center",
+      height:"20%"
       // backgroundColor:"#bcbcbc",
     },
     subtitle1:{
@@ -165,7 +164,7 @@ export default function ImmunTrackerModal() {
                         Ability for medical providers to update respective patient immunization records
                     </li>
                     <li>
-                        Patient users can view their updated immunization records as well as their dependents'
+                        Patient users can view their updated immunization records as well as dependents'
                     </li>
                 </ul>
               </Typography>

@@ -81,8 +81,6 @@ const useStyles = makeStyles({
     },
     headline:{
       borderBottom:"4px solid #4ca69c",
-      fontSize:"1.4rem",
-      // color:"#37766F",
       color:"whitesmoke",
       backgroundColor:"#37766F",
     },
@@ -99,8 +97,11 @@ const useStyles = makeStyles({
     },
     imageContent:{
       display:"flex",
-      justifyContent:"center",
-      // backgroundColor:"#bcbcbc",
+      flexDirection:"column",
+      alignItems:"center",
+      margin:"0 auto",
+      width:"60%",
+      minWidth:"500px",
     },
     subtitle1:{
       color:"whitesmoke",
@@ -143,7 +144,8 @@ export default function FieldTripModal() {
           MyFieldTripp
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/24/fieldtripp-teacher-dashboard.png" style={{width:"80%", margin:"0 auto"}}/>
+            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/24/fieldtripp-teacher-dashboard.png"/>
+            <div className="modalStack">  Technologies: React N | Node.js | Postgress | Passport.js | Semantic UI </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalLeft">

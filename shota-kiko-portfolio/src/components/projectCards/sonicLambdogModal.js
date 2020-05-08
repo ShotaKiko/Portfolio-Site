@@ -100,8 +100,11 @@ const useStyles = makeStyles({
     },
     imageContent:{
       display:"flex",
-      justifyContent:"center",
-      // backgroundColor:"#bcbcbc",
+      flexDirection:"column",
+      alignItems:"center",
+      width:"60%",
+      minWidth:"500px",
+      margin:"0 auto",
     },
     subtitle1:{
       color:"whitesmoke",
@@ -144,7 +147,8 @@ export default function SonicLambdogModal() {
           Sonic the Lambdog
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/25/sonic-lambdog-dashboard.png" style={{width:"80%", margin:"0 auto"}}/>
+            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/25/sonic-lambdog-dashboard.png"/>
+            <div className="modalStack">  Technologies: Python | Django | React | Semantic UI </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalRight">

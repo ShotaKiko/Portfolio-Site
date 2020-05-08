@@ -100,9 +100,11 @@ const useStyles = makeStyles({
     },
     imageContent:{
       display:"flex",
-      justifyContent:"center",
-      height:"20%"
-      // backgroundColor:"#bcbcbc",
+      flexDirection:"column",
+      alignItems:"center",
+      margin:"0 auto",
+      width:"60%",
+      minWidth:"500px",
     },
     subtitle1:{
       color:"whitesmoke",
@@ -146,6 +148,7 @@ export default function ImmunTrackerModal() {
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/25/immuTrack-patient-dash.png" style={{width:"80%", margin:"0 auto"}}/>
+            <div className="modalStack">  Technologies: React | Redux | Node.js | Postgress | Bootstrap </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalRight">

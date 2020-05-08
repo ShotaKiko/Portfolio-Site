@@ -100,8 +100,11 @@ const useStyles = makeStyles({
     },
     imageContent:{
       display:"flex",
-      justifyContent:"center",
-      // backgroundColor:"#bcbcbc",
+      flexDirection:"column",
+      alignItems:"center",
+      margin:"0 auto",
+      width:"60%",
+      minWidth:"500px",
     },
     subtitle1:{
       color:"whitesmoke",
@@ -145,6 +148,7 @@ export default function UIProjectModal() {
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/26/ui-project-services.png" style={{width:"80%", margin:"0 auto"}}/>
+            <div className="modalStack">  Technologies: HTML5 | CSS3 | Javascript ES6 | Less </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalLeft">

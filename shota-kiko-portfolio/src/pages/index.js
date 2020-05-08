@@ -21,14 +21,7 @@ import Contact from "../components/contact"
 
 const IndexPage = () => (
   <Layout>
-    
     <SEO title="Home" />
-   
-    <div style={{ width: `60%`, marginBottom: `1.45rem` }}>
-      
-    </div>
-    
-    {/* <About /> */}
     <AboutMe />
     <Projects />
     <Contact />

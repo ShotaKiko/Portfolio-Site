@@ -28,7 +28,6 @@ const Layout = ({ children }) => {
   return (
     <div className="pageContainer" style={{backgroundColor:"whitesmoke"}}>
       <Landing />
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <NavBar />
       <div
         style={{

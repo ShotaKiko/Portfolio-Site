@@ -18,7 +18,7 @@ import UIProjectModal from './uiProjectModal';
 
 const accent = teal[500]
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     textAlign:"initial",
   },
@@ -43,13 +43,16 @@ const useStyles = makeStyles({
     // height:"35px",
     color: accent,
     backgroundColor: "white",
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize:".6rem",
+    },
     '&:hover': {
       background: "#4ca69c",
       color:"white",
       borderColor:"white"
     }
   },
-});
+}));
 
 export default function UIProject() {
   const classes = useStyles();
@@ -73,7 +76,7 @@ export default function UIProject() {
           </Typography>
         
           <Typography variant="body2" component="p" className={classes.cardText}>
-            An beginner project focused on implementing a clean user interface and responsive design
+            A beginner project focused on implementing a clean user interface and responsive design
             for desktop, tablet and mobile devices. Built to precisely match design documents.
           </Typography>
         </CardContent>

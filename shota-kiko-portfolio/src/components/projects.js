@@ -54,13 +54,13 @@ export default function Projects() {
        
        <div className="projectsCardsContainer">
         <div className="project 1">
-            <UIProject />
-        </div>
-        <div className="project 2">
             <ImmunTracker />
         </div>
-        <div className="project 3">
+        <div className="project 2">
             <MyFieldTrip />
+        </div>
+        <div className="project 3">
+            <UIProject />
         </div>
         <div className="project 4">
             <Sonic />  

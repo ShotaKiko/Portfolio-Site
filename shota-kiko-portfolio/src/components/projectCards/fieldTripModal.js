@@ -64,7 +64,7 @@ const DialogActions = withStyles((theme) => ({
 
 const accent = teal[500]
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 450,
     },
@@ -73,6 +73,9 @@ const useStyles = makeStyles({
       fontFamily:"Roboto",
       color: accent,
       backgroundColor: "white",
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize:".6rem",
+      },
       '&:hover': {
         background: "#4ca69c",
         color:"white",
@@ -120,7 +123,7 @@ const useStyles = makeStyles({
     buttonSection:{
      marginTop:"5px",
     },
-  });
+  }));
 
 export default function FieldTripModal() {
   const classes = useStyles();

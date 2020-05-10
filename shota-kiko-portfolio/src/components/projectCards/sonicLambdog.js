@@ -16,7 +16,7 @@ import SonicLambdogModal from './sonicLambdogModal';
 
 const accent = teal[500]
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     textAlign:"initial"
   },
@@ -38,16 +38,18 @@ const useStyles = makeStyles({
   booton:{
     fontSize:".7vw",
     fontFamily:"Roboto",
-    height:"35px",
     color: accent,
     backgroundColor: "white",
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize:".6rem",
+    },
     '&:hover': {
       background: "#4ca69c",
       color:"white",
       borderColor:"white"
     }
   },
-});
+}));
 
 export default function Sonic() {
   const classes = useStyles();
@@ -94,7 +96,7 @@ export default function Sonic() {
 
         <Button className={classes.booton}  size="small" variant="contained" 
           href="https://zealous-poincare-b92bd3.netlify.com" target="mynewtab"rel="noopener noreferrer">
-          <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
+          <LaptopMacIcon /> <span style={{visibility:"hidden"}}>ii</span>
               Visit Site
         </Button>
         </div>

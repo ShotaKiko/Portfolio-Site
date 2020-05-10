@@ -62,7 +62,7 @@ const DialogActions = withStyles((theme) => ({
 
 const accent = teal[500]
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 450,
     },
@@ -74,6 +74,9 @@ const useStyles = makeStyles({
       display:"flex",
       justifyContent:"space-evenly",
       alignItems:"center",
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize:".6rem",
+      },
       '&:hover': {
         background: "#4ca69c",
         color:"white",
@@ -123,7 +126,7 @@ const useStyles = makeStyles({
     buttonSection:{
      marginTop:"5px",
     },
-  });
+  }));
 
 export default function ImmunTrackerModal() {
   const classes = useStyles();

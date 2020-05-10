@@ -948,6 +948,9 @@ i{
   i{
     font-size: 3rem;
   }
+  .aboutLink{
+    padding-bottom: 3vh;
+  }
 }
 /* Projects Section */
 

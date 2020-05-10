@@ -17,7 +17,7 @@ import FieldTripModal from './fieldTripModal.js'
 
 const accent = teal[500]
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     textAlign:"initial"
   },
@@ -41,13 +41,16 @@ const useStyles = makeStyles({
     fontFamily:"Roboto",
     color: accent,
     backgroundColor: "white",
+    [theme.breakpoints.between('xs', 'sm')]: {
+      fontSize:".6rem",
+    },
     '&:hover': {
       background: "#4ca69c",
       color:"white",
       borderColor:"white"
     }
   },
-});
+}));
 
 export default function MyFieldTripp() {
   const classes = useStyles();

@@ -12,7 +12,6 @@ import "devicon"
 import { teal } from '@material-ui/core/colors';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import LaunchIcon from '@material-ui/icons/Launch';
 import UIProjectModal from './uiProjectModal';
 
 
@@ -97,7 +96,7 @@ export default function UIProject() {
 
         <Button className={classes.booton}  size="small" variant="contained" href="https://reverent-poincare-59e1bb.netlify.app/index.html" 
           target="_blank" rel="noopener noreferrer">
-          <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
+          <LaptopMacIcon /> <span style={{visibility:"hidden"}}>ii</span>
               Visit Site
         </Button>
       </div>

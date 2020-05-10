@@ -742,6 +742,7 @@ pre tt:after {
   /* border: 2px dashed purple; */
   width: 100%;
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   margin-top: 5vh;
 }
@@ -756,12 +757,14 @@ pre tt:after {
 
 .aboutLeft{
   /* border: 2px solid green; */
-  width: 50%;
+  width: 40%;
   height: 80vh;
   font-size: 1.1vw;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-end;
 }
 
 .profilePic{
@@ -782,7 +785,7 @@ pre tt:after {
 
 .aboutText{
   /* border:2px solid dodgerblue; */
-  width: 85%;
+  width: 90%;
   height: 85%;
   margin:0 auto;
   text-align: justify;
@@ -816,7 +819,7 @@ pre tt:after {
 
 .aboutRight{  
   /* border: 2px solid blue; */
-  width: 50%;
+  width: 40%;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -1013,16 +1016,23 @@ i{
     /* border: 2px dashed red; */
     height: fit-content;
   }
+  .projectHeader{
+    margin-top: 13vh;
+  }
 
   .projectsCardsContainer{
     /* border: 2px dashed steelblue; */
     flex-direction: column;
+    align-items: center;
   }
 
   .project{
     width: 95%;
-    margin: 0 auto;
-    margin-bottom: 2vh;
+    margin: 3vh 0px;
+  }
+
+  .projectArrows{
+    margin-bottom: 4vh;
   }
 
 }
@@ -1111,6 +1121,34 @@ i{
   display: flex;
   justify-content: flex-end;
 }
+
+/* Contact Mobile Section */
+
+@media screen and (max-width: 600px){
+  .Contact{
+    /* border: 2px solid rebeccapurple; */
+    height: fit-content;
+  }
+
+  .contactHeader{
+    margin-top: 14vh;
+  }
+
+  .theQuestionDiv{
+    font-size: .8rem;
+  }
+
+  .contactForm{
+    /* border: 1px solid white; */
+    margin: 4vh 0;
+  }
+
+  .footerLinks{
+    width: 80%;
+    margin-top: 4vh;
+  }
+}
+
 
 /* Modal/ Dialog related Styels*/
 

@@ -34,6 +34,9 @@ const useStyles = makeStyles((theme) => ({
   },
   media:{
     height:"23vh",
+    [theme.breakpoints.between('xs', 'sm')]: {
+      height:"100%"
+    },
   },
   booton:{
     fontSize:".7vw",

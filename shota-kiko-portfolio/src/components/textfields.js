@@ -24,11 +24,18 @@ const useStyles = makeStyles((theme) => ({
       width: '35vw',
       display:"flex",
       backgroundColor:"#052738",
+      [theme.breakpoints.between('xs', 'sm')]: {
+        fontSize:".4rem",
+        width:"100%",
+        margin: theme.spacing(0),
+        margin:"3vh 0px"
+      },
     },
   },
   field:{
     '& > *': {
       color: "#BEBBBB",
+      zIndex:"0",
     },
   },
   button:{

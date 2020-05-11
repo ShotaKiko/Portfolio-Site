@@ -1239,6 +1239,66 @@ ul{
   margin-top: 1.7vh;
 }
 
+/* MOdal mobile section */
+
+@media screen and (max-width: 600px) {
+  .modalLeft{
+    width: 100%;
+    margin: 1vh 0px;
+    padding-bottom: 9px;
+  }
+  .modalRight{
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .numba1{
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .numba2{
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .modalImage{
+    width: 90%;
+    margin-top: 1vh;
+  }
+  .modalStack{
+    font-size: 2vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .modalImage{
+    width: 65%;
+  }
+  .modalStack{
+    font-size: .8rem;
+  }
+ 
+}
+
+@media screen and (max-width: 365px) {
+  .modalImage{
+    width: 55%;
+  }
+  .modalStack{
+    font-size: .8rem;
+  }
+ 
+}
+
+@media screen and (max-width: 330px) {
+  .modalImage{
+    display: none;
+  }
+  .modalStack{
+    font-size: 1rem;
+  }
+ 
+}
+
+
 /* Change autocomplete styles in WebKit */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 

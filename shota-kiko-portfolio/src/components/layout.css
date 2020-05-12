@@ -1270,33 +1270,14 @@ ul{
 
 @media screen and (max-width: 380px) {
   .modalImage{
-    width: 65%;
-  }
-  .modalStack{
-    font-size: .8rem;
-  }
- 
-}
-
-@media screen and (max-width: 365px) {
-  .modalImage{
-    width: 55%;
-  }
-  .modalStack{
-    font-size: .8rem;
-  }
- 
-}
-
-@media screen and (max-width: 330px) {
-  .modalImage{
-    display: none;
+    width: 100%;
   }
   .modalStack{
     font-size: 1rem;
   }
  
 }
+
 
 
 /* Change autocomplete styles in WebKit */

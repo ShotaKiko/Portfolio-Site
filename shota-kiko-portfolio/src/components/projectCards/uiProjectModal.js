@@ -180,6 +180,7 @@ export default function UIProjectModal() {
         open={open} 
         maxWidth='md' 
         fullWidth={true}
+        scroll={scroll}
         // className={classes.root}
       >
         <DialogTitle id="customized-dialog-title" onClose={handleClose} className={classes.headline}>

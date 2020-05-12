@@ -68,7 +68,7 @@ const accent = teal[500]
 const useStyles = makeStyles((theme) => ({
     root: {
       [theme.breakpoints.between('xs', 'sm')]: {
-        height:"900px"
+        height:"fit-content"
       },
     },
     booton:{

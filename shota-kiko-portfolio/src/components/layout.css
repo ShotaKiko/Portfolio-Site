@@ -1244,27 +1244,39 @@ ul{
 @media screen and (max-width: 600px) {
   .modalLeft{
     width: 100%;
-    margin: 1vh 0px;
-    padding-bottom: 9px;
+    margin: 3vh 0px;
+    padding-bottom: 15px;
   }
   .modalRight{
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-top: 3vh;
   }
   .numba1{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 90%;
+   
   }
+  .numba1 li{
+    padding-left: 0px;
+  }
+
   .numba2{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 90%;
   }
+
+  .numba2 li{
+    padding-left: -10px;
+  }
+
   .modalImage{
-    width: 90%;
+    width: 100%;
     margin-top: 1vh;
   }
   .modalStack{
-    font-size: 2vh;
+    font-size: 2.5vh;
+    margin-top: 5vh;
   }
 }
 
@@ -1274,6 +1286,18 @@ ul{
   }
   .modalStack{
     font-size: 1rem;
+  }
+  .numba1{
+    font-size: 1.3rem;
+  }
+  .numba1 li{
+    padding-left: 0px;
+  }
+  .numba2{
+    font-size: 1.3rem;
+  }
+  .numba2 li{
+    padding-right: 10px;
   }
  
 }

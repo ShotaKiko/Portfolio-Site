@@ -1239,6 +1239,12 @@ ul{
   margin-top: 1.7vh;
 }
 
+.modalStackLong{
+  color:#37766F;
+  font-size: .9rem;
+  margin-top: 1.7vh;
+}
+
 /* MOdal mobile section */
 
 @media screen and (max-width: 600px) {
@@ -1286,6 +1292,11 @@ ul{
   }
   .modalStack{
     font-size: 1rem;
+  }
+  .modalStackLong{
+    color:#37766F;
+    font-size: .8rem;
+    margin-top: 3vh;
   }
   .numba1{
     font-size: 1.3rem;

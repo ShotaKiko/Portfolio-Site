@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, useTheme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
@@ -16,6 +16,8 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
+
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
 
@@ -66,7 +68,9 @@ const accent = teal[500]
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 450,
+      [theme.breakpoints.between('xs', 'sm')]: {
+        height:"fit-content"
+      },
     },
     booton:{
       fontSize:".7vw",
@@ -86,6 +90,7 @@ const useStyles = makeStyles((theme) => ({
       borderBottom:"4px solid #4ca69c",
       color:"whitesmoke",
       backgroundColor:"#37766F",
+      fontSize:"1.4rem",
     },
     image:{
       borderRadius:"7px",
@@ -97,6 +102,10 @@ const useStyles = makeStyles((theme) => ({
       width:"85%",
       margin:"0 auto",
       borderBottom:".5px solid #bcbcbc",
+      [theme.breakpoints.between('xs', 'sm')]: {
+        flexDirection:"column",
+        width:"99%",
+      },
     },
     imageContent:{
       display:"flex",
@@ -104,7 +113,9 @@ const useStyles = makeStyles((theme) => ({
       alignItems:"center",
       margin:"0 auto",
       width:"60%",
-      minWidth:"500px",
+      [theme.breakpoints.between('xs', 'sm')]: {
+        width:"100%",
+      },
     },
     subtitle1:{
       color:"whitesmoke",
@@ -122,33 +133,56 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonSection:{
      marginTop:"5px",
+     [theme.breakpoints.between('xs', 'sm')]: {
+      display:"flex",
+      justifyContent:"space-evenly",
+      },
     },
   }));
 
 export default function FieldTripModal() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [scroll, setScroll] = React.useState('paper')
 
-  const handleClickOpen = () => {
+  const theme = useTheme()
+  const fullscreenBoolean = useMediaQuery(theme.breakpoints.down('xs'))
+
+  const handleClickOpen = (scrollType) => () => {
     setOpen(true);
+    setScroll(scrollType)
   };
+  
   const handleClose = () => {
     setOpen(false);
   };
 
   return (
     <div>
-      <Button className={classes.booton} size="small" variant="contained" onClick={handleClickOpen}>
+      <Button 
+        className={classes.booton} 
+        size="small" 
+        variant="contained" 
+        onClick={handleClickOpen('body')}
+      >
           <LaunchIcon />
           Learn More <span style={{visibility:"hidden"}}>i</span>
       </Button>
-      <Dialog  onClose={handleClose} aria-labelledby="customized-dialog-title" open={open} maxWidth='md' fullWidth={true}>
+      <Dialog
+        fullScreen={fullscreenBoolean}  
+        onClose={handleClose} 
+        aria-labelledby="customized-dialog-title" 
+        open={open} 
+        maxWidth='md' 
+        fullWidth={true}
+        scroll={scroll}
+      >
         <DialogTitle id="customized-dialog-title" onClose={handleClose} className={classes.headline}>
           MyFieldTripp
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/24/fieldtripp-teacher-dashboard.png"/>
-            <div className="modalStack">  Technologies: React N | Node.js | Postgress | Passport.js | Semantic UI </div>
+            <div className="modalStackLong"> React N | Node.js | Postgress | Passport.js | Semantic UI </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalLeft">

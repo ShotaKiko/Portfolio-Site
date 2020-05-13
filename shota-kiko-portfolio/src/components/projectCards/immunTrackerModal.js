@@ -162,7 +162,12 @@ export default function ImmunTrackerModal() {
 
   return (
     <div>
-      <Button className={classes.booton} size="small" variant="contained" onClick={handleClickOpen('body')}>
+      <Button 
+        className={classes.booton} 
+        size="small" 
+        variant="contained" 
+        onClick={handleClickOpen('body')}
+      >
           <LaunchIcon />
           Learn More <span style={{visibility:"hidden"}}>i</span>
       </Button>

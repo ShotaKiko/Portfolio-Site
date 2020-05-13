@@ -133,10 +133,10 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonSection:{
      marginTop:"5px",
-     [theme.breakpoints.between('xs', 'sm')]: {
+      [theme.breakpoints.between('xs', 'sm')]: {
       display:"flex",
       justifyContent:"space-evenly",
-    },
+      },
     },
   }));
 // test
@@ -160,7 +160,12 @@ export default function UIProjectModal() {
 
   return (
     <div>
-      <Button className={classes.booton} size="small" variant="contained" onClick={handleClickOpen('body')}>
+      <Button 
+        className={classes.booton} 
+        size="small" 
+        variant="contained" 
+        onClick={handleClickOpen('body')}
+      >
           <LaunchIcon />
           Learn More <span style={{visibility:"hidden"}}>i</span>
       </Button>

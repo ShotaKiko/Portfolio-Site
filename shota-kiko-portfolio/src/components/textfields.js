@@ -27,8 +27,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.between('xs', 'sm')]: {
         fontSize:".4rem",
         width:"100%",
-        margin: theme.spacing(0),
-        margin:"3vh 0px"
+        margin:"2vh 0px"
       },
     },
   },

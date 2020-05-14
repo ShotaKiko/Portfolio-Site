@@ -697,7 +697,7 @@ pre tt:after {
 }
 
 .landing{
-  background-image: url("../images/landing.jpg");
+  background-image: url("../images/landing.png");
   height:100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -903,6 +903,57 @@ i{
 
 .aboutLink:hover{
   color:#1eb5d4;
+}
+
+/* Tablet Styling About Section */
+
+@media screen and (max-width: 1260px) {
+  .navContainer{
+    font-size: 1.2rem;
+    z-index: 1;
+  }
+  .placeholder{
+    display: none;
+  }
+  .aboutContainer{
+    height:fit-content;
+    padding-top: 8vh;
+  }
+  .aboutContent {
+    /* background-color: skyblue; */
+    flex-direction: column;
+    justify-content: start;
+    width:100%;
+  }
+  .profilePic{
+    width: 200px;
+    height: 280px;
+  }
+
+  .aboutLeft{
+    width:100%;
+    height: fit-content;
+  }
+  .aboutText{
+    height: fit-content;
+  }
+  .aboutRight{
+    width:100%;
+    height: fit-content;
+    padding: 5vh 0px;
+  }
+  .text{
+    font-size: 1.4rem;
+  }
+  .iconContainer{
+    margin-top: 2vh;
+  }
+  i{
+    font-size: 5rem;
+  }
+  .aboutLink{
+    padding-bottom: 3vh;
+  }
 }
 
 /* Mobile Styling About Section */

@@ -74,11 +74,16 @@ const useStyles = makeStyles((theme) => ({
     booton:{
       fontSize:".7vw",
       fontFamily:"Roboto",
-      // height:"35px",
       color: accent,
       backgroundColor: "white",
       [theme.breakpoints.between('xs', 'sm')]: {
         fontSize:".6rem",
+      },
+      [theme.breakpoints.only('sm')]: {
+        fontSize:".7rem",
+      },
+      [theme.breakpoints.only('md')]: {
+        fontSize:".7rem",
       },
       '&:hover': {
         background: "#4ca69c",

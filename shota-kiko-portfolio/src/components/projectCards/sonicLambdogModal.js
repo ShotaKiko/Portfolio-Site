@@ -79,6 +79,12 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.between('xs', 'sm')]: {
         fontSize:".6rem",
       },
+      [theme.breakpoints.only('sm')]: {
+        fontSize:".7rem",
+      },
+      [theme.breakpoints.only('md')]: {
+        fontSize:".7rem",
+      },
       '&:hover': {
         background: "#4ca69c",
         color:"white",

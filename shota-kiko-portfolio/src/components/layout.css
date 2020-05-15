@@ -697,7 +697,7 @@ pre tt:after {
 }
 
 .landing{
-  background-image: url("../images/landing.png");
+  background-image: url("../images/landing.jpg");
   height:100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -943,13 +943,13 @@ i{
     padding: 5vh 0px;
   }
   .text{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   .iconContainer{
     margin-top: 2vh;
   }
   i{
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .aboutLink{
     padding-bottom: 3vh;
@@ -1061,6 +1061,33 @@ i{
   margin-bottom: 2vh;
 }
 
+/* Projects Tablet Section */
+@media screen and (max-width: 1040px) {
+  .projectcontainer-fluid{
+    /* border: 2px dashed red; */
+    height: fit-content;
+  }
+  .projectHeader{
+    margin-top: 13vh;
+  }
+
+  .projectsCardsContainer{
+    /* border: 2px dashed steelblue; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project{
+    width: 65%;
+    margin: 3vh 0px;
+  }
+
+  .projectArrows{
+    margin-bottom: 4vh;
+  }
+
+}
+
  /* Projects Mobile Section */
 @media screen and (max-width: 600px) {
   .projectcontainer-fluid{
@@ -1078,8 +1105,8 @@ i{
   }
 
   .project{
-    width: 95%;
-    margin: 3vh 0px;
+    width: 100%;
+    margin: 2vh 0px;
   }
 
   .projectArrows{

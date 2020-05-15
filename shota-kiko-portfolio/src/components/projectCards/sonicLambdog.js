@@ -22,11 +22,18 @@ const useStyles = makeStyles((theme) => ({
   },
   header:{
     fontSize:"1.2rem",
+    
   },
   media:{
     height:"23vh",
     [theme.breakpoints.between('xs', 'sm')]: {
       height:"100%"
+    },
+    [theme.breakpoints.only('sm')]: {
+      height:"100%",
+    },
+    [theme.breakpoints.only('md')]: {
+      height:"100%",
     },
   },
   sub:{
@@ -45,6 +52,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     [theme.breakpoints.between('xs', 'sm')]: {
       fontSize:".6rem",
+    },
+    [theme.breakpoints.only('sm')]: {
+      fontSize:".7rem",
+    },
+    [theme.breakpoints.only('md')]: {
+      fontSize:".7rem",
     },
     '&:hover': {
       background: "#4ca69c",

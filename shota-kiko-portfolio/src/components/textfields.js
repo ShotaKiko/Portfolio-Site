@@ -26,8 +26,14 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor:"#052738",
       [theme.breakpoints.between('xs', 'sm')]: {
         fontSize:".4rem",
-        width:"100%",
-        margin:"2vh 0px"
+        width:"80vw",
+        margin:"1vh 0px"
+      },
+      [theme.breakpoints.only('md')]: {
+        width:"60vw",
+      },
+      [theme.breakpoints.only('sm')]: {
+        width:"60vw",
       },
     },
   },

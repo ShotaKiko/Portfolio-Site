@@ -108,7 +108,11 @@ const useStyles = makeStyles((theme) => ({
       width:"85%",
       margin:"0 auto",
       borderBottom:".5px solid #bcbcbc",
-      [theme.breakpoints.between('xs', 'sm')]: {
+      [theme.breakpoints.only('sm')]: {
+        width:"99%",
+        flexWrap:"wrap"
+      },
+      [theme.breakpoints.only('xs')]: {
         flexDirection:"column",
         width:"99%",
       },

@@ -1285,7 +1285,7 @@ i{
 }
 
 
-/* Modal/ Dialog related Styels*/
+/* Modal Dialog related Styles*/
 
 
 .numba1 li::before {
@@ -1383,6 +1383,54 @@ ul{
 
 }
 
+/* Modal ~Ipad styling */
+@media screen and (max-width: 959px) {
+  .modalLeft{
+    width: 80%;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-top: 2vh;
+  }
+  .modalRight{
+    width: 80%;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-top: 2vh;
+  }
+  .numba1{
+    font-size: 1.4rem;
+    width: 90%;
+   
+  }
+  .numba1 li{
+    padding-left: 0px;
+  }
+
+  .numba2{
+    font-size: 1.4rem;
+    width: 90%;
+  }
+
+  .numba2 li{
+    padding-left: -10px;
+  }
+
+  .modalImage{
+    width: 90%;
+    margin-top: 1vh;
+  }
+  .modalStack{
+    font-size: 1.4rem;
+    margin-top: 3vh;
+  }
+  .modalStackLong{
+    font-size: 1.3rem;
+    margin-top: 3vh;
+  }
+}
+
 /* MOdal mobile section */
 
 @media screen and (max-width: 600px) {
@@ -1421,6 +1469,12 @@ ul{
   .modalStack{
     font-size: 2.5vh;
     margin-top: 5vh;
+  }
+  .modalStackLong{
+    color:#37766F;
+    font-size: 1rem;
+    margin-top: 3vh;
+    text-align: center;
   }
 }
 

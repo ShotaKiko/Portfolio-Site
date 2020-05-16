@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      width: '35vw',
+      width: '40vw',
       display:"flex",
       backgroundColor:"#052738",
       [theme.breakpoints.between('xs', 'sm')]: {
@@ -82,7 +82,7 @@ export default function TextFields() {
             id="filled-multiline-static"
             label="Message"
             multiline
-            rows={8}
+            rows={9}
             rowsMax={16}
             defaultValue=""
             variant="filled"

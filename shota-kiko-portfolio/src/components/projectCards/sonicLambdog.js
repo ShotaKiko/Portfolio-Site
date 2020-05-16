@@ -25,22 +25,14 @@ const useStyles = makeStyles((theme) => ({
     
   },
   media:{
-    height:"23vh",
-    [theme.breakpoints.between('xs', 'sm')]: {
-      height:"100%"
-    },
-    [theme.breakpoints.only('sm')]: {
-      height:"100%",
-    },
-    [theme.breakpoints.only('md')]: {
-      height:"100%",
-    },
+    height:"100%"
   },
   sub:{
     fontSize:".9rem",
   },
   cardText:{
     fontSize:".9rem",
+    textAlign:"justify",
   },
   content:{
     // marginTop:"-20px",
@@ -76,7 +68,7 @@ export default function Sonic() {
         <CardMedia className={classes.media}
           component="img"
           alt="sonicthelambdog"
-          image="https://imagehost.imageupload.net/2020/04/12/sonic-lambdog.png"
+          image="https://imagehost.imageupload.net/2020/05/16/sonic-lambdog.md.png"
           title="Sonic the Lambdog"
         />
         <CardContent>
@@ -90,7 +82,7 @@ export default function Sonic() {
           
           <Typography variant="body2" component="p" className={classes.cardText}>
             Sonic the Lambdog features a custom room generation algorithm. Users
-            can sign up and attempt to traverse through the labyrinth while viewing other players
+            can sign up and attempt to traverse through the 100+ room labyrinth while viewing other players
             in the same room.
           </Typography>
         </CardContent>

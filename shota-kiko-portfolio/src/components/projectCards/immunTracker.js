@@ -28,21 +28,13 @@ const useStyles = makeStyles((theme) => ({
   },
   cardText:{
     fontSize:".9rem",
+    textAlign:"justify",
   },
   content:{
 
   },
   media:{
-    height:"23vh",
-    [theme.breakpoints.between('xs', 'sm')]: {
-      height:"100%"
-    },
-    [theme.breakpoints.only('sm')]: {
-      height:"100%",
-    },
-    [theme.breakpoints.only('md')]: {
-      height:"100%",
-    },
+    height:"100%"
   },
   booton:{
     fontSize:".7vw",
@@ -75,7 +67,7 @@ export default function ImmunTracker() {
         <CardMedia className={classes.media}
           component="img"
           alt="immunizationTracker"
-          image="https://imagehost.imageupload.net/2020/04/12/immunizationtracker.png"
+          image="https://imagehost.imageupload.net/2020/05/16/immuTRack-landingPage.md.png"
           title="Immunization Tracker"
         />
         <CardContent className={classes.content}>
@@ -86,7 +78,9 @@ export default function ImmunTracker() {
           <Typography className={classes.sub} color="textSecondary" gutterBottom>React | Redux | Node </Typography>
           
           <Typography variant="body2" component="p" className={classes.cardText}>
-          ImmuTrack is designed to help reduce hassle and potential stress through the provision of a centralized and streamlined resource with which to track all of your immunization needs.
+            ImmuTrack is an app designed to help reduce the hassle and potential stress through 
+            the provision of a centralized and streamlined resource with which to keep track 
+            all of your immunization needs.
           </Typography>
         </CardContent>
       </CardActionArea>

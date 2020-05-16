@@ -25,22 +25,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize:"1.2rem",
   },
   media:{
-    height:"23vh",
-    [theme.breakpoints.between('xs', 'sm')]: {
-      height:"100%"
-    },
-    [theme.breakpoints.only('sm')]: {
-      height:"100%",
-    },
-    [theme.breakpoints.only('md')]: {
-      height:"100%",
-    },
+    height:"100%"
   },
   sub:{
     fontSize:".9rem",
   },
   cardText:{
     fontSize:".9rem",
+    textAlign:"justify",
   },
   content:{
     // marginTop:"-20px",
@@ -76,7 +68,7 @@ export default function MyFieldTripp() {
         <CardMedia className={classes.media}
           component="img"
           alt="fieldtripp"
-          image="https://imagehost.imageupload.net/2020/04/07/myfieldtripp.png"
+          image="https://imagehost.imageupload.net/2020/05/16/fieldtrip-landing.md.png"
           title="Field Trip Planner"
         />
         <CardContent className={classes.content}>
@@ -87,7 +79,7 @@ export default function MyFieldTripp() {
           <Typography className={classes.sub} color="textSecondary" gutterBottom>ReactN | Node | Postgres </Typography>
           
           <Typography variant="body2" component="p" className={classes.cardText}>
-            MyFieldTripp is a dependable field trip planner application
+            MyFieldTripp is simple and dependable field trip planner application
             that helps teachers bring back the joy of field trips. 
             The app allows you to create and keep track of field trips and participants.
           </Typography>

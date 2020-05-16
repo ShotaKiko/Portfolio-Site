@@ -25,22 +25,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize:"1.2rem",
   },
   media:{
-    height:"23vh",
-    [theme.breakpoints.between('xs', 'sm')]: {
-      height:"100%"
-    },
-    [theme.breakpoints.only('sm')]: {
-      height:"100%",
-    },
-    [theme.breakpoints.only('md')]: {
-      height:"100%",
-    },
+    height:"100%"
   },
   sub:{
     fontSize:".9rem",
   },
   cardText:{
     fontSize:".9rem",
+    textAlign:"justify",
   },
   content:{
     // marginTop:"-20px",
@@ -77,7 +69,7 @@ export default function UIProject() {
         <CardMedia className={classes.media}
           component="img"
           alt="sonicthelambdog"
-          image="https://imagehost.imageupload.net/2020/04/12/ui-project.png"
+          image="https://imagehost.imageupload.net/2020/05/16/ui-project.md.png"
           title="User Interface Project "
         />
         <CardContent>
@@ -90,8 +82,9 @@ export default function UIProject() {
           </Typography>
         
           <Typography variant="body2" component="p" className={classes.cardText}>
-            A beginner project focused on implementing a clean user interface and responsive design
-            for desktop, tablet and mobile devices. Built to precisely match design documents.
+            A beginner project focused on implementing a clean user interface and user experience 
+            featuring responsive design for desktop, tablet and mobile devices. Built to  
+            design document specifications.
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -66,7 +66,6 @@ export default function Projects() {
             <Sonic />  
         </div>
        </div>
-     
         
         <div className="projectArrows">
                 <Link to="about" activeClass="active" spy={true} smooth={true} duration={1100}>

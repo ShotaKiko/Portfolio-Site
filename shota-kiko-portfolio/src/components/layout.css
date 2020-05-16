@@ -734,7 +734,8 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh; 
+  min-height: 100vh;
+  padding-top: 2.5vh;
 }
 
 
@@ -744,7 +745,7 @@ pre tt:after {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 5vh;
+  padding-top: 5vh;
 }
 
 
@@ -952,7 +953,7 @@ i{
     font-size: 4rem;
   }
   .aboutLink{
-    padding-bottom: 3vh;
+    padding-bottom: 4vh;
   }
 }
 
@@ -1010,13 +1011,12 @@ i{
 
 .projectcontainer-fluid{
   /* border: 2px solid blue; */
-  
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #d0dbff;
   margin: 0 auto;
-  height: 100vh;
   width: 100%;
   
   background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
@@ -1058,7 +1058,35 @@ i{
   display: flex;
   justify-content: center;
   margin-top: 6vh;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
+}
+
+/* Projects <1650 Section */
+@media screen and (max-width: 1650px) {
+  .projectcontainer-fluid{
+    /* border: 2px dashed red; */
+    height: fit-content;
+  }
+  .projectHeader{
+    margin-top: 13vh;
+  }
+
+  .projectsCardsContainer{
+    /* border: 2px dashed steelblue; */
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .project{
+    /* border: 2px dashed green; */
+    width: 45%;
+    margin: 2vh 1vw;
+  }
+
+  .projectArrows{
+    margin-bottom: 5vh;
+  }
+
 }
 
 /* Projects Tablet Section */
@@ -1078,7 +1106,7 @@ i{
   }
 
   .project{
-    width: 65%;
+    width: 80%;
     margin: 3vh 0px;
   }
 
@@ -1141,7 +1169,7 @@ i{
   font-weight: 600;
   display: flex;
   justify-content: center;
-  margin-top: 7vh;
+  margin-top: 4vh;
   color: #BEBBBB;
 }
 
@@ -1344,12 +1372,15 @@ ul{
   color:#37766F;
   font-size: .9rem;
   margin-top: 1.7vh;
+  font-weight: 600;
 }
 
 .modalStackLong{
   color:#37766F;
   font-size: .9rem;
   margin-top: 1.7vh;
+  font-weight: 600;
+
 }
 
 /* MOdal mobile section */

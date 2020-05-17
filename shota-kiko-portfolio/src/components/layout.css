@@ -697,7 +697,7 @@ pre tt:after {
 }
 
 .landing{
-  background-image: url("../images/landing.jpg");
+  background-image: url("https://imagehost.imageupload.net/2020/05/17/landing.jpg");
   height:100vh;
   background-repeat: no-repeat;
   background-size: cover;

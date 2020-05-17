@@ -152,7 +152,7 @@ export default function FieldTripModal() {
   const [scroll, setScroll] = React.useState('paper')
 
   const theme = useTheme()
-  const fullscreenBoolean = useMediaQuery(theme.breakpoints.down('xs'))
+  const fullscreenBoolean = useMediaQuery(theme.breakpoints.between('xs', 'sm'))
 
   const handleClickOpen = (scrollType) => () => {
     setOpen(true);

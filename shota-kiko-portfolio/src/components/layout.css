@@ -890,6 +890,7 @@ i{
   padding:15px;
   border-radius: 5px;
   font-size: 3.5vw;
+  
   /* border: 1px solid green; */
 }
 
@@ -905,6 +906,23 @@ i{
 .aboutLink:hover{
   color:#1eb5d4;
 }
+
+/* 2k to 4k monitor */
+@media screen and (min-width: 2600px) {
+  .aboutLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .text{
+    font-size: 1.2rem;
+  }
+
+  i{
+    font-size: 5rem;
+  }
+}
+
 
 /* Tablet Styling About Section */
 

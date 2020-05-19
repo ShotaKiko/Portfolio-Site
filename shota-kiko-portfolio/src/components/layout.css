@@ -735,6 +735,7 @@ pre tt:after {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  height: fit-content;
   padding-top: 2.5vh;
 }
 
@@ -889,7 +890,7 @@ i{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
   padding:15px;
   border-radius: 5px;
-  font-size: 3.5vw;
+  font-size: 3.3vw;
   
   /* border: 1px solid green; */
 }

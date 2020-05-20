@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -14,6 +14,7 @@ import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LaunchIcon from '@material-ui/icons/Launch';
 
 import FieldTripModal from './fieldTripModal.js'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const accent = teal[500]
 
@@ -62,9 +63,25 @@ const useStyles = makeStyles((theme) => ({
 export default function MyFieldTripp() {
   const classes = useStyles();
 
+  const [open, setOpen] = React.useState(false);
+  const [scroll, setScroll] = React.useState('paper')
+
+  const theme = useTheme()
+  const fullscreenBoolean = useMediaQuery(theme.breakpoints.between('xs', 'sm'))
+
+  const handleClickOpen = (scrollType) => () => {
+    setOpen(true);
+    setScroll(scrollType)
+  };
+  
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      
+      <CardActionArea  onClick={handleClickOpen('body')}>
         <CardMedia className={classes.media}
           component="img"
           alt="fieldtripp"
@@ -86,6 +103,7 @@ export default function MyFieldTripp() {
         </CardContent>
       </CardActionArea>
       <CardActions>
+      
       <div className="cardBootons">
         <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/field-trip-planner" 
           target="mynewtab" rel="noopener noreferrer">
@@ -93,21 +111,26 @@ export default function MyFieldTripp() {
               Github
         </Button>
         
-
-      <FieldTripModal />
-
-        {/* <Button className={classes.booton} size="small" variant="contained">
-          <LaunchIcon />
-          Learn More <span style={{visibility:"hidden"}}>i</span>
-        </Button> */}
-
+        <Button 
+          className={classes.booton} 
+          size="small" 
+          variant="contained" 
+          onClick={handleClickOpen('body')}
+        >
+            <LaunchIcon />
+            Learn More <span style={{visibility:"hidden"}}>i</span>
+        </Button>
+      
         <Button className={classes.booton}  size="small" variant="contained" href="https://myfieldtripp.com/"
             target="mynewtab" rel="noopener noreferrer" >
             <LaptopMacIcon /> <span style={{visibility:"hidden"}}>iii</span>
               Visit Site
         </Button>
         </div>
+      
       </CardActions>
+        
+        <FieldTripModal fullscreen={fullscreenBoolean} onClose={handleClose} open={open} scroll={scroll} />
     </Card>
   );
 }

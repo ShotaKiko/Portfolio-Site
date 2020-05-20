@@ -146,44 +146,21 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-export default function FieldTripModal() {
+export default function FieldTripModal(props) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState('paper')
-
-  const theme = useTheme()
-  const fullscreenBoolean = useMediaQuery(theme.breakpoints.between('xs', 'sm'))
-
-  const handleClickOpen = (scrollType) => () => {
-    setOpen(true);
-    setScroll(scrollType)
-  };
-  
-  const handleClose = () => {
-    setOpen(false);
-  };
-
+ 
   return (
     <div>
-      <Button 
-        className={classes.booton} 
-        size="small" 
-        variant="contained" 
-        onClick={handleClickOpen('body')}
-      >
-          <LaunchIcon />
-          Learn More <span style={{visibility:"hidden"}}>i</span>
-      </Button>
       <Dialog
-        fullScreen={fullscreenBoolean}  
-        onClose={handleClose} 
+        fullScreen={props.fullscreen}  
+        onClose={props.onClose} 
         aria-labelledby="customized-dialog-title" 
-        open={open} 
+        open={props.open} 
         maxWidth='md' 
         fullWidth={true}
-        scroll={scroll}
+        scroll={props.scroll}
       >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose} className={classes.headline}>
+        <DialogTitle id="customized-dialog-title" onClose={props.onClose} className={classes.headline}>
           MyFieldTripp
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
@@ -246,7 +223,7 @@ export default function FieldTripModal() {
                 <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
                 Visit Site
             </Button>
-          <Button className={classes.booton} autoFocus onClick={handleClose}  size="small" variant="contained">
+          <Button className={classes.booton} autoFocus onClick={props.onClose}  size="small" variant="contained">
             <ExitToAppIcon />
             Return
           </Button>

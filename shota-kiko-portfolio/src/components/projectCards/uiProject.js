@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -13,6 +13,9 @@ import { teal } from '@material-ui/core/colors';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import UIProjectModal from './uiProjectModal';
+import LaunchIcon from '@material-ui/icons/Launch';
+
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
 const accent = teal[500]
@@ -62,10 +65,23 @@ const useStyles = makeStyles((theme) => ({
 
 export default function UIProject() {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const [scroll, setScroll] = React.useState('paper');
+
+  const theme = useTheme()
+  const fullscreenBoolean = useMediaQuery(theme.breakpoints.between('xs','sm')) 
+
+  const handleClickOpen = (scrollType) => ()  => {
+    setOpen(true);
+    setScroll(scrollType)
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      <CardActionArea onClick={handleClickOpen('body')}>
         <CardMedia className={classes.media}
           component="img"
           alt="sonicthelambdog"
@@ -96,11 +112,15 @@ export default function UIProject() {
               Github
         </Button>
         
-        {/* <Button className={classes.booton}  size="small" variant="contained">
-          <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
-          Learn More
-        </Button> */}
-        <UIProjectModal />
+        <Button 
+          className={classes.booton} 
+          size="small" 
+          variant="contained" 
+          onClick={handleClickOpen('body')}
+        >
+          <LaunchIcon />
+          Learn More <span style={{visibility:"hidden"}}>i</span>
+      </Button>
 
         <Button className={classes.booton}  size="small" variant="contained" href="https://reverent-poincare-59e1bb.netlify.app/index.html" 
           target="_blank" rel="noopener noreferrer">
@@ -109,6 +129,7 @@ export default function UIProject() {
         </Button>
       </div>
       </CardActions>
+        <UIProjectModal open={open} scroll={scroll} fullscreen={fullscreenBoolean} onClose={handleClose}/>
     </Card>
   );
 }

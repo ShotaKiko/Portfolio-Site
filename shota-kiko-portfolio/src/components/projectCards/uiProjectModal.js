@@ -11,14 +11,10 @@ import Typography from '@material-ui/core/Typography';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import LaunchIcon from '@material-ui/icons/Launch';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
-
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 
 const styles = (theme) => ({
   root: {
@@ -145,46 +141,21 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 // test
-export default function UIProjectModal() {
+export default function UIProjectModal(props) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState('paper');
-
-  const theme = useTheme()
-  const fullscreenBoolean = useMediaQuery(theme.breakpoints.between('xs','sm')) 
-
-  const handleClickOpen = (scrollType) => ()  => {
-    setOpen(true);
-    setScroll(scrollType)
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-
-
+  
   return (
     <div>
-      <Button 
-        className={classes.booton} 
-        size="small" 
-        variant="contained" 
-        onClick={handleClickOpen('body')}
-      >
-          <LaunchIcon />
-          Learn More <span style={{visibility:"hidden"}}>i</span>
-      </Button>
       <Dialog 
-        fullScreen={fullscreenBoolean} 
-        onClose={handleClose} 
+        fullScreen={props.fullscreen} 
+        onClose={props.onClose} 
         aria-labelledby="customized-dialog-title" 
-        open={open} 
+        open={props.open} 
         maxWidth='md' 
         fullWidth={true}
-        scroll={scroll}
-        // className={classes.root}
+        scroll={props.scroll}
       >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose} className={classes.headline}>
+        <DialogTitle id="customized-dialog-title" onClose={props.onClose} className={classes.headline}>
           User Interface Project 
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
@@ -247,7 +218,7 @@ export default function UIProjectModal() {
             <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span>
                 Visit Site
             </Button>
-            <Button className={classes.booton} autoFocus onClick={handleClose}  size="small" variant="contained">
+            <Button className={classes.booton} autoFocus onClick={props.onClose}  size="small" variant="contained">
              <ExitToAppIcon />
              Return
             </Button>

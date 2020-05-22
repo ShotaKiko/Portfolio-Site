@@ -1,5 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { useState } from 'react'
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -13,6 +14,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LaunchIcon from '@material-ui/icons/Launch';
 import SonicLambdogModal from './sonicLambdogModal';
+
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const accent = teal[500]
 
@@ -62,9 +65,26 @@ const useStyles = makeStyles((theme) => ({
 export default function Sonic() {
   const classes = useStyles();
 
+  const [open, setOpen] = useState(false)
+  const [scroll, setScroll] = useState('paper')
+
+  
+  const theme = useTheme()
+  const fullscreenBoolean = useMediaQuery(theme.breakpoints.between('xs', 'sm'))
+  
+  const handleClickOpen = (scrollType) => () => {
+    setOpen(true)
+    setScroll(scrollType)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
+  }
+
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+        <SonicLambdogModal open={open} scroll={scroll} fullscreen={fullscreenBoolean} onClose={handleClose} />
+      <CardActionArea onClick={handleClickOpen('body')}>
         <CardMedia className={classes.media}
           component="img"
           alt="sonicthelambdog"
@@ -95,12 +115,16 @@ export default function Sonic() {
               Github
         </Button>
 
-        <SonicLambdogModal />
         
-        {/* <Button className={classes.booton} size="small" variant="contained">
-          <LaunchIcon /> <span style={{visibility:"hidden"}}>i</span>
-          Learn More
-        </Button> */}
+        <Button 
+          className={classes.booton} 
+          size="small" 
+          variant="contained" 
+          onClick={handleClickOpen('body')}
+        >
+            <LaunchIcon />
+            Learn More <span style={{visibility:"hidden"}}>i</span>
+        </Button>
 
         <Button className={classes.booton}  size="small" variant="contained" 
           href="https://zealous-poincare-b92bd3.netlify.com" target="mynewtab"rel="noopener noreferrer">

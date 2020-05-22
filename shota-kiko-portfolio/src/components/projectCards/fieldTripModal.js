@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles, useTheme } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
@@ -11,15 +11,10 @@ import Typography from '@material-ui/core/Typography';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import LaunchIcon from '@material-ui/icons/Launch';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
-
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
-
 
 const styles = (theme) => ({
   root: {

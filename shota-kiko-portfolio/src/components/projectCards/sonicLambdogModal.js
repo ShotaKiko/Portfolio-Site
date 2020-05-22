@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles, useTheme } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
@@ -11,14 +11,10 @@ import Typography from '@material-ui/core/Typography';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import LaunchIcon from '@material-ui/icons/Launch';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
-
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 
 const styles = (theme) => ({
   root: {
@@ -150,43 +146,21 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-export default function SonicLambdogModal() {
+export default function SonicLambdogModal(props) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState('paper');
-
-  const theme = useTheme()
-  const fullscreenBoolean = useMediaQuery(theme.breakpoints.between('xs', 'sm'))
-
-  const handleClickOpen = (scrollType) => () => {
-    setOpen(true);
-    setScroll(scrollType)
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <div>
-      <Button 
-        className={classes.booton} 
-        size="small" 
-        variant="contained" 
-        onClick={handleClickOpen('body')}
-      >
-          <LaunchIcon />
-          Learn More <span style={{visibility:"hidden"}}>i</span>
-      </Button>
       <Dialog 
-        fullScreen={fullscreenBoolean} 
-        onClose={handleClose} 
+        fullScreen={props.fullscreen} 
+        onClose={props.onClose} 
         aria-labelledby="customized-dialog-title" 
-        open={open} 
+        open={props.open} 
         maxWidth='md' 
         fullWidth={true}
-        scroll={scroll}
+        scroll={props.scroll}
       >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose} className={classes.headline}>
+        <DialogTitle id="customized-dialog-title" onClose={props.onClose} className={classes.headline}>
           Sonic the Lambdog
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
@@ -249,7 +223,7 @@ export default function SonicLambdogModal() {
             <LaptopMacIcon /> <span style={{visibility:"hidden"}}>ii</span>
                 Visit Site
             </Button>
-            <Button className={classes.booton} autoFocus onClick={handleClose}  size="small" variant="contained">
+            <Button className={classes.booton} autoFocus onClick={props.onClose}  size="small" variant="contained">
                 <ExitToAppIcon />
                 Return
             </Button>

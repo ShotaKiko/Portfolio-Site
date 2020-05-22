@@ -305,7 +305,7 @@ export default function ImmunTracker() {
               <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span> 
                   Visit Site
             </Button>
-            <Button className={classes.booton} autoFocus onClick={handleClose}  size="small" variant="contained">
+            <Button className={classes.booton} onClick={handleClose}  size="small" variant="contained">
                 <ExitToAppIcon />
                 Return
             </Button>

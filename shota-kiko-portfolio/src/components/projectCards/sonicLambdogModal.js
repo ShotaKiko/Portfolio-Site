@@ -223,7 +223,7 @@ export default function SonicLambdogModal(props) {
             <LaptopMacIcon /> <span style={{visibility:"hidden"}}>ii</span>
                 Visit Site
             </Button>
-            <Button className={classes.booton} autoFocus onClick={props.onClose}  size="small" variant="contained">
+            <Button className={classes.booton} onClick={props.onClose}  size="small" variant="contained">
                 <ExitToAppIcon />
                 Return
             </Button>

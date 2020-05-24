@@ -1166,8 +1166,9 @@ i{
 
 .Contact{
   /* border: 2px solid red; */
-  
-  height: 100vh;
+  background-color: #181E28;
+  min-height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1201,16 +1202,20 @@ i{
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.arrowButtons{
+.arrowButtonToTopContainer{
   /* border:2px solid red; */
   display: flex;
   justify-content: center;
-  margin-top: 4vh;
+  width: 100%;
+  background-color: #181E28;
+}
 
-  height: 32px;
-  font-size: 35px;
+.toTopButton{
+  padding-bottom: 1vh;
 }
 
 .footerContainer{

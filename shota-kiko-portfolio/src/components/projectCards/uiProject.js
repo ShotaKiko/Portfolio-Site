@@ -37,9 +37,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize:".9rem",
     textAlign:"justify",
   },
-  content:{
-    // marginTop:"-20px",
-  },
   booton:{
     fontSize:".7vw",
     fontFamily:"Roboto",
@@ -59,7 +56,10 @@ const useStyles = makeStyles((theme) => ({
       background: "#4ca69c",
       color:"white",
       borderColor:"white"
-    }
+    },
+    '&:focus': {
+      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+    },
   },
 }));
 

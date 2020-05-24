@@ -18,7 +18,10 @@ const useStyles = makeStyles({
       backgroundColor: navButtonColor,
       '&:hover': {
         background: navButtonHoverColor,
-      }
+      },
+      '&:focus': {
+        boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+      },
     },
 });
 
@@ -26,7 +29,7 @@ const useStyles = makeStyles({
 export default function Contact() {
     const classes = useStyles()
     return(
-        <section className="Contact" id="contact" style={{backgroundColor:"#181E28"}}>
+        <section className="Contact" id="contact">
                 <div className="contactHeader" >
                   <h2>Contact</h2>
                 </div>
@@ -39,19 +42,18 @@ export default function Contact() {
                   
                 <div className="contactForm">
                   <TextFields />
+                  <div className="arrowButtonToTopContainer">
+                    <Link className="toTopButton" to="home" activeClass="active" spy={true} smooth={true} duration={1100}>
+                        <Button className={classes.navButton} variant="contained" size="large"> 
+                            <KeyboardCapslockIcon />
+                        </Button>
+                    </Link>
+                  </div>
                 </div>
                 
-                <div className="arrowButtons" style={{backgroundPositionY:"125%"}}>
-                  <Link to="home" activeClass="active" spy={true} smooth={true} duration={1100}>
-                      <Button className={classes.navButton} variant="contained" size="large"> 
-                          <KeyboardCapslockIcon />
-                      </Button>
-                  </Link>
-                </div>
                 <div className="footerPosition">
                   <Footer />
-                </div>
-                
+                </div>      
         </section>
     )
 }

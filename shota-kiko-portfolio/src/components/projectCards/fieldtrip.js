@@ -22,6 +22,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     textAlign:"initial"
   },
+  inputFocused: {
+    borderColor: 'red',
+    boxShadow: '0 0 0 0.2rem rgba(0,123,255,.25)',
+    backgroundColor: "red",
+  },
   header:{
     fontSize:"1.2rem",
   },
@@ -56,7 +61,10 @@ const useStyles = makeStyles((theme) => ({
       background: "#4ca69c",
       color:"white",
       borderColor:"white"
-    }
+    },
+    '&:focus': {
+      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+    },
   },
 }));
 
@@ -112,7 +120,8 @@ export default function MyFieldTripp() {
         </Button>
         
         <Button 
-          className={classes.booton} 
+          className={classes.booton}
+          classes={{ focusVisible: false }} 
           size="small" 
           variant="contained" 
           onClick={handleClickOpen('body')}
@@ -121,7 +130,7 @@ export default function MyFieldTripp() {
             Learn More <span style={{visibility:"hidden"}}>i</span>
         </Button>
       
-        <Button className={classes.booton}  size="small" variant="contained" href="https://myfieldtripp.com/"
+        <Button className={classes.booton} classes={{ focused: classes.inputFocused }} size="small" variant="contained" href="https://myfieldtripp.com/"
             target="mynewtab" rel="noopener noreferrer" >
             <LaptopMacIcon /> <span style={{visibility:"hidden"}}>iii</span>
               Visit Site

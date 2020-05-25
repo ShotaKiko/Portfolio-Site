@@ -88,7 +88,10 @@ const useStyles = makeStyles((theme) => ({
         background: "#4ca69c",
         color:"white",
         borderColor:"white"
-      }
+      },
+      '&:focus': {
+        boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+      },
     },
     headline:{
       borderBottom:"4px solid #4ca69c",
@@ -222,7 +225,7 @@ export default function ImmunTrackerModal(props) {
               <LaptopMacIcon /> <span style={{visibility:"hidden"}}>i</span> 
                   Visit Site
             </Button>
-            <Button className={classes.booton} onClick={props.onCloseClose}  size="small" variant="contained">
+            <Button className={classes.booton} onClick={props.onClose}  size="small" variant="contained">
                 <ExitToAppIcon />
                 Return
             </Button>

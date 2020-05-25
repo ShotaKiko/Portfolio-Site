@@ -27,7 +27,10 @@ const useStyles = makeStyles({
       borderRightColor: buttonBorderColor,
       '&:hover': {
         background: navButtonHoverColor,
-      }
+      },
+      '&:focus': {
+        boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+      },
     },
     navButton2:{
         color: "white",
@@ -36,7 +39,10 @@ const useStyles = makeStyles({
         borderLeftColor: buttonBorderColor,
         '&:hover': {
           background: navButtonHoverColor,
-        }
+        },
+        '&:focus': {
+            boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+          },
       },
 });
 

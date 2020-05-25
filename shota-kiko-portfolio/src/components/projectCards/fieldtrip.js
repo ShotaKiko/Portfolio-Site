@@ -22,11 +22,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     textAlign:"initial"
   },
-  inputFocused: {
-    borderColor: 'red',
-    boxShadow: '0 0 0 0.2rem rgba(0,123,255,.25)',
-    backgroundColor: "red",
-  },
   header:{
     fontSize:"1.2rem",
   },

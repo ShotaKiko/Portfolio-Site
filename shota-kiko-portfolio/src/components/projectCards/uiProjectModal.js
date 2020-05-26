@@ -154,7 +154,7 @@ export default function UIProjectModal(props) {
         onClose={props.onClose} 
         aria-labelledby="customized-dialog-title" 
         open={props.open} 
-        maxWidth='md' 
+        maxWidth='lg' 
         fullWidth={true}
         scroll={props.scroll}
       >

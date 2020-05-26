@@ -11,7 +11,7 @@ const Landing = () => (
     <section className="landing" id="home">
         <div className="overlay"></div>
         <div className="landing-text-wrapper">
-            <Tween from={{opacity: 0, duration: 7, x: -300}}>
+            <Tween from={{opacity: 0, duration: 10, x: -300}} stagger={.8}>
                 <h2 className="landing-text">
                     Hello, I'm Shota Kikozashvili.
                     <br></br>
@@ -19,7 +19,7 @@ const Landing = () => (
                     <br></br>
                 </h2>
             </Tween>
-            <Tween from={{opacity: 0, duration: 7, x: 300}}>
+            <Tween from={{opacity: 0, duration: 10, x: 300}} stagger={.8}>
                 <div style={{marginLeft:"32%"}}>
                     <Link className="learnMore" activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
                         <Button color="info">

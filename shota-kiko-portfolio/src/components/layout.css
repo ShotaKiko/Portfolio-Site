@@ -749,17 +749,29 @@ pre tt:after {
   padding-top: 5vh;
 }
 
-
-
 .aboutLeftHeader{
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quoteContainer{
+  font-size: .6rem;
+  text-align: end;
+  font-style: italic;
+  visibility: hidden;
+}
+
+.aboutLeftHeader:hover .quoteContainer{
+  display: block;
+  visibility: visible;
 }
 
 .aboutLeft{
   /* border: 2px solid green; */
-  width: 40%;
+  width: 49.5%;
   height: 80vh;
   font-size: 1.1vw;
   line-height: 1.6;
@@ -771,18 +783,15 @@ pre tt:after {
 
 .profilePic{
   /* border:2px dashed green; */
-  height: 100%;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
 }
 
 .profilePicContainer{
   /* border:2px solid red; */
-  height: 25%;
   display: flex;
   justify-content: center;
-  margin-top: 3vh;
-  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 .aboutText{
@@ -809,7 +818,7 @@ pre tt:after {
 
 .text{
   width: 95%;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .aboutRightHeader{
@@ -909,14 +918,18 @@ i{
 }
 
 /* 2k to 4k monitor */
-@media screen and (min-width: 2600px) {
+@media screen and (min-width: 2560px) {
   .aboutLeft{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
   .text{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .aboutLeft{
+    width: 40%;
   }
 
   i{
@@ -924,6 +937,18 @@ i{
   }
 }
 
+/* Profile pic for laptop sizes */
+@media screen and (max-width: 1500px){
+  .profilePicContainer{
+    /* border: 2px solid orange; */
+    height: 200px;
+    width: 150px;
+  }
+
+  .text{
+    font-size: .9rem;
+  }
+}
 
 /* Tablet Styling About Section */
 
@@ -945,9 +970,9 @@ i{
     justify-content: start;
     width:100%;
   }
-  .profilePic{
-    width: 200px;
-    height: 280px;
+  .profilePicContainer{
+    width: initial;
+    height: initial;
   }
 
   .aboutLeft{
@@ -996,9 +1021,9 @@ i{
     justify-content: start;
     width:100%;
   }
-  .profilePic{
-    width: 200px;
-    height: 280px;
+  .profilePicContainer{
+    width: initial;
+    height: initial;
   }
 
   .aboutLeft{

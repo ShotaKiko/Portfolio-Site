@@ -108,7 +108,7 @@ export default function UIProject() {
       <div className="cardBootons">
         <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/ShotaKiko/User-Interface-Project-Week" 
           target="_blank" rel="noopener noreferrer">
-          <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
+          <GitHubIcon className="githubIcon" /> <span style={{visibility:"hidden"}}>i</span>
               Github
         </Button>
         

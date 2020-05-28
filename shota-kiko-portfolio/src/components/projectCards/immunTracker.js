@@ -162,7 +162,7 @@ export default function ImmunTracker() {
           <div className="cardBootons">
             <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/buildweek-immunizationtracker/front-end-architect" 
               target="mynewtab" rel="noopener noreferrer">
-              <GitHubIcon className="githubIcon" fontSize="small"/> <span style={{visibility:"hidden"}}>i</span>
+              <GitHubIcon className="githubIcon" /> <span style={{visibility:"hidden"}}>i</span>
                   Github
             </Button>
 

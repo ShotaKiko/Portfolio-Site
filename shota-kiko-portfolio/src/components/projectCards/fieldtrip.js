@@ -110,7 +110,7 @@ export default function MyFieldTripp() {
       <div className="cardBootons">
         <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/field-trip-planner" 
           target="mynewtab" rel="noopener noreferrer">
-          <GitHubIcon className="githubIcon" fontSize="small"/> <span style={{visibility:"hidden"}}>i</span>
+          <GitHubIcon className="githubIcon" /> <span style={{visibility:"hidden"}}>i</span>
               Github
         </Button>
         

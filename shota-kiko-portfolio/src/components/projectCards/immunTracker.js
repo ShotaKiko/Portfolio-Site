@@ -27,20 +27,22 @@ const useStyles = makeStyles((theme) => ({
   },
   header:{
     fontSize:"1.2rem",
-  },
-  headline:{
-    borderBottom:"4px solid #4ca69c",
-    fontSize:"1.4rem",
-    // color:"#37766F",
-    color:"whitesmoke",
-    backgroundColor:"#37766F",
+    [theme.breakpoints.up('xl')]: {
+      fontSize:"1.5rem",
+    },
   },
   sub:{
     fontSize:".9rem",
+    [theme.breakpoints.up('xl')]: {
+      fontSize:"1.2rem",
+    },
   },
   cardText:{
     fontSize:".9rem",
     textAlign:"justify",
+    [theme.breakpoints.up('xl')]: {
+      fontSize:"1.1rem",
+    },
   },
   image:{
     borderRadius:"7px",
@@ -104,6 +106,9 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only('md')]: {
       fontSize:".7rem",
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize:".8rem",
     },
     '&:hover': {
       background: "#4ca69c",

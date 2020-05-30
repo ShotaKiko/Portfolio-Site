@@ -707,6 +707,34 @@ pre tt:after {
   align-items: center;
 }
 
+.landingButton{
+  margin-left: 32%;
+}
+
+@keyframes reverse {
+  from {transform: rotate(90deg);}
+  to {transform: rotate(0deg);}
+}
+
+.rotate{
+ animation-name: reverse;
+ animation-duration: .5s;
+}
+
+@keyframes arrow {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(90deg);}
+}
+
+
+.landingButton:hover .rotate{
+  animation-name: arrow;
+  animation-duration: .7s;
+  transform: rotate(90deg);
+}
+
+
+
 .overlay {
   position: absolute;
   top: 0;

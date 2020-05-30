@@ -53,7 +53,7 @@ export default function Footer(){
                         />
                     </Button>
                     
-                    <Button target="mynewtab" rel="noopener noreferrer" href="https://www.scribd.com/document/459879096/Shota-s-Resume-Software-Developer" >
+                    <Button target="mynewtab" rel="noopener noreferrer" href="https://drive.google.com/file/d/1U3J3z8JhwFGwTBSGRNyKdpuluuzF8Grv/view" >
                         <FindInPageIcon  className={classes.icon}
                             fontSize="large"
                             color="primary"

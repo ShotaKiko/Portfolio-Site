@@ -867,7 +867,7 @@ pre tt:after {
 
 .iconContainer{
   /* border: 1px solid red; */
-  height: 55vh;
+  height: 60vh;
 }
 
 .firstRow{
@@ -927,7 +927,7 @@ pre tt:after {
 .flip-card{
   background-color: transparent;
   perspective: 1000px;
-  width: 14%;
+  width: 18%;
   height: 100%;
 }
 
@@ -971,7 +971,7 @@ pre tt:after {
   justify-content: center;
   background-color: #37766F;
   color: whitesmoke;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .flip-card-text{
@@ -986,7 +986,7 @@ pre tt:after {
 
 i{
   max-width: 16rem;
-  font-size: 3.3vw;
+  font-size: 4vw;
   padding:14px;
   /* border: 1px solid green; */
 }
@@ -998,6 +998,7 @@ i{
   color: #37766F;
   text-decoration: none;
   cursor: pointer;
+  margin-bottom: 2vh;
 }
 
 .aboutLink:hover{
@@ -1028,12 +1029,32 @@ i{
 @media screen and (max-width: 1500px){
   .profilePicContainer{
     /* border: 2px solid orange; */
-    height: 200px;
-    width: 150px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 4vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .profilePic{
+    /* border: 2px solid black; */
+    height: 70%;
+  }
+
+  .flip-card{
+    width: 20%;
+  }
+
+  .flip-card-back{
+    font-size: .6rem;
   }
 
   .text{
     font-size: .9rem;
+  }
+
+  .aboutLink{
+    margin-bottom: 4vh;
   }
 }
 
@@ -1078,12 +1099,28 @@ i{
     font-size: 1.1rem;
   }
   .iconContainer{
+    /* border: 2px solid gold; */
     margin-top: 2vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
+  .flip-card{
+    width: 20%;
+  }
+
+  .flip-card-back{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   i{
     font-size: 4rem;
   }
   .aboutLink{
+    
     padding-bottom: 4vh;
   }
 }
@@ -1131,13 +1168,28 @@ i{
   .iconContainer{
     margin-top: 2vh;
   }
+
+  .flip-card{
+    height: 82.5%;
+    width: 27%;
+  }
+
   i{
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .aboutLink{
+    margin-top: 2vh;
     padding-bottom: 3vh;
   }
 }
+
+/* Iphone 5s About Section*/
+@media screen and (max-width: 322px) {
+  .iconContainer{
+    height: 120vh;
+  }
+}
+
 /* Projects Section */
 
 .projectcontainer-fluid{

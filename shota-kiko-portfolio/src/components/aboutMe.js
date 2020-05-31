@@ -100,33 +100,197 @@ export default function AboutMe() {
                     
                     <div className="iconContainer">
                         <div className="firstRow">
-                            <i class="devicon-html5-plain-wordmark colored"></i>
-                            <i class="devicon-css3-plain-wordmark colored"></i>
-                            <i class="devicon-javascript-plain colored"></i>
+                            
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-html5-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Dry Semantic HTML5</p>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-css3-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">CSS Styling to optimize UX</p>
+                                    </div> 
+                                </div>
+                            </div>
+                            
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-javascript-plain colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Experienced writing ES6 Javascript</p>
+                                    </div> 
+                                </div>
+                            </div>
+                           
                         </div>
                         
                         <div className="secondRow">
-                            <i class="devicon-react-original-wordmark colored"></i>
-                            <i class="devicon-nodejs-plain-wordmark colored"></i>
-                            <i class="devicon-express-original-wordmark colored"></i>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-react-original-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">React hooks as well as Redux for state management</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-nodejs-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Building REST APIs with Node.js</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-express-original-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text"> Building Node servers with Express framework</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
                         </div>
                         
                         <div className="thirdRow">
-                            <i class="devicon-python-plain-wordmark colored"></i>
-                            <i class="devicon-django-plain-wordmark colored"></i>
-                            <i class="devicon-postgresql-plain-wordmark colored"></i>
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-python-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text"> Proficiency solving code challenges with Python3 </p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-django-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text"> Building backend architectures with Django</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-postgresql-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Experience using SQL and Postgres databases</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
                         </div>
 
                         <div className="fourthRow">
-                            <i class="devicon-heroku-plain-wordmark colored"></i>
-                            <i class="devicon-git-plain-wordmark colored"></i>
-                            <i class="devicon-github-plain-wordmark colored"></i>
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-heroku-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Experienced with heroku deployment and configuration</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-git-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Experienced with git version control</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-github-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Experienced with industry Github practices and resolving merges</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
                         </div>
 
                         <div className="fifthRow">
-                            <i class="devicon-less-plain-wordmark colored"></i>
-                            <i class="devicon-sass-original colored"></i>
-                            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-less-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Experienced using Less framework for scalable apps</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-sass-original colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Experienced using Sass framework for scalable apps</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    
+                                        <i class="flip-card-front devicon-bootstrap-plain-wordmark colored"></i>
+                                    
+                                    <div className="flip-card-back">
+                                        <p className="flip-card-text">Experienced using Bootsrap for UI styling</p>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+ 
                         </div>
                     
                     </div>

@@ -17,7 +17,7 @@ const Landing = () => (
             </div>
             <div>
                 <div className="landingButton">
-                    <Link className="learnMore" activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
+                    <Link className="fadeIn" activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
                         <Button color="info">
                             Learn More <ArrowForwardIcon className="rotate" />
                         </Button>

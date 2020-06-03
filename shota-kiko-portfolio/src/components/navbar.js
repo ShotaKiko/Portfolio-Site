@@ -6,7 +6,7 @@ const NavBar = () =>(
     <div className="navcontainer-fluid">
        <div className="logoContainer" >
         <img className="logoimage" src="https://imagehost.imageupload.net/2020/03/26/logov2.png" alt="logo" onClick={() => scroll.scrollToTop()}/>
-        {/* <img src="../images/gatsby-icon.png" alt="test"></img> */}
+
        </div>
        
 

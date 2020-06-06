@@ -705,8 +705,6 @@ pre tt:after {
   
 }
 
-
-
 /* Landing Section */
 
 .landing{
@@ -1089,6 +1087,10 @@ i{
 
   i{
     font-size: 5rem;
+  }
+
+  .flip-card-back{
+    font-size: 1rem;
   }
 }
 

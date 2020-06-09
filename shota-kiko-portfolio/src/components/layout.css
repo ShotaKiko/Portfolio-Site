@@ -1072,6 +1072,14 @@ i{
 
 /* 2k to 4k monitor */
 @media screen and (min-width: 2560px) {
+  .landing-text{
+    font-size: 2.2rem;
+  }
+
+  .landingButton{
+    margin-left: 33%;
+  }
+  
   .aboutLeft{
     display: flex;
     flex-direction: column;

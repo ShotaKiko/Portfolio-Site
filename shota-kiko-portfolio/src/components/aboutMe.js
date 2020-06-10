@@ -107,7 +107,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-html5-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text">Dry Semantic HTML5</p>
+                                        <p className="flip-card-text">Experienced with writing dry semantic HTML5</p>
                                     </div> 
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-css3-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text">CSS Styling to optimize UX</p>
+                                        <p className="flip-card-text">CSS3 Styling to optimize UX</p>
                                     </div> 
                                 </div>
                             </div>
@@ -183,7 +183,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-python-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text"> Proficiency solving code challenges with Python3 </p>
+                                        <p className="flip-card-text"> Proficiency building backend servers with Python3 </p>
                                     </div> 
                                 </div>
                                 
@@ -207,7 +207,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-postgresql-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text">Experience using SQL and Postgres databases</p>
+                                        <p className="flip-card-text">Experienced using/designing SQL and Postgres databases</p>
                                     </div> 
                                 </div>
                                 
@@ -246,7 +246,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-github-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text">Experienced with industry Github practices and resolving merges</p>
+                                        <p className="flip-card-text">Experienced with Github flow and resolving merge conflicts</p>
                                     </div> 
                                 </div>
                                 

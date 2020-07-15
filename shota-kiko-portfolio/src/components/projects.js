@@ -7,6 +7,7 @@ import MyFieldTrip from './projectCards/fieldtrip'
 import ImmunTracker from './projectCards/immunTracker'
 import Sonic from './projectCards/sonicLambdog'
 import UIProject from './projectCards/uiProject'
+import GameOfLife from './projectCards/gameOfLife'
 
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
@@ -70,6 +71,10 @@ export default function Projects() {
         </div>
         <div className="project 4">
             <Sonic />  
+        </div>
+
+        <div className="project 5">
+            <GameOfLife />
         </div>
        </div>
         

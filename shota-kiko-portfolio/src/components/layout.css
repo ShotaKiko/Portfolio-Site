@@ -1292,15 +1292,16 @@ i{
 .projectsCardsContainer{
   /* border: 2px dashed steelblue; */
   width: 95%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .project{
   /* border: 2px solid orange; */
   padding:5px;
-  width:35%;
+  width:30%;
   text-align: start;
   height: 100%;
   

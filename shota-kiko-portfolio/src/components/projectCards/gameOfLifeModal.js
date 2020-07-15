@@ -164,7 +164,7 @@ export default function GameOfLifeModal(props) {
         scroll={props.scroll}
       >
         <DialogTitle id="customized-dialog-title" onClose={props.onClose} className={classes.headline}>
-          John Horton Conway's Game of Life
+          John Conway's Game of Life
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://img.imageupload.net/2020/07/15/GameofLifeSimulation.png"/>

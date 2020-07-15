@@ -113,7 +113,7 @@ export default function Sonic() {
           
           <Typography variant="body2" component="p" className={classes.cardText}>
             Sonic the Lambdog features a custom room generation algorithm. Users
-            can sign up and attempt to traverse through the 100+ room labyrinth while viewing other players
+            can register and attempt to find the exit and traverse through the 100+ room labyrinth while viewing other players
             in the same room.
           </Typography>
         </CardContent>

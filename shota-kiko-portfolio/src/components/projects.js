@@ -61,20 +61,20 @@ export default function Projects() {
        
        <div className="projectsCardsContainer">
         <div className="project 1">
-            <ImmunTracker />
+            <GameOfLife />
         </div>
         <div className="project 2">
             <MyFieldTrip />
         </div>
         <div className="project 3">
-            <UIProject />
+            <Sonic />  
         </div>
         <div className="project 4">
-            <Sonic />  
+            <ImmunTracker />
         </div>
 
         <div className="project 5">
-            <GameOfLife />
+            <UIProject />
         </div>
        </div>
         

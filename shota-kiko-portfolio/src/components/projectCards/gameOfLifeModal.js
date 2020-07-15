@@ -186,7 +186,7 @@ export default function GameOfLifeModal(props) {
                         devices.
                     </li>
                     <li>
-                        Abilities to activate and deactivate cells as well as insert various pattern presets.
+                        Ability to activate and deactivate cells as well as insert various pattern presets.
                     </li>
                     <li>
                         Ability to adjust the speed of the simulation, stop it at any step and randomize the grid

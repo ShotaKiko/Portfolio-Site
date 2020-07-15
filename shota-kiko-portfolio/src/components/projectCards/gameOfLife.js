@@ -13,7 +13,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import LaunchIcon from '@material-ui/icons/Launch';
 
-import FieldTripModal from './fieldTripModal.js'
+import GameOfLifeModal from './gameOfLifeModal'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const accent = teal[500]
@@ -92,12 +92,12 @@ export default function GameOfLife() {
 
   return (
     <Card className={classes.root}>
-      
+      <GameOfLifeModal open={open} scroll={scroll} fullscreen={fullscreenBoolean} onClose={handleClose} />
       <CardActionArea  onClick={handleClickOpen('body')}>
         <CardMedia className={classes.media}
           component="img"
           alt="Conway's Game of Life"
-          image="https://img.imageupload.net/2020/07/15/gameOfLifeDash.md.png"
+          image="https://img.imageupload.net/2020/07/15/GameofLifeDashboard.md.png"
           title="Conway's Game of Life"
         />
         <CardContent className={classes.content}>
@@ -109,7 +109,7 @@ export default function GameOfLife() {
           
           <Typography variant="body2" component="p" className={classes.cardText}>
             The Game of Life is a cellular automaton devised by John Horton Conway. 
-            This app lets users run the simulate the game and visualize how
+            This app lets users run the simulation and visualize how
             the grid cells interact with one another based on neighboring cells.
           </Typography>
         </CardContent>

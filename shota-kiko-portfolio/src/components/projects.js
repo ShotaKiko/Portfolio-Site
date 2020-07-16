@@ -68,7 +68,7 @@ export default function Projects() {
             <MyFieldTrip />
         </div>
         <div className="project 3">
-            <Sonic />  
+            <ImmunTracker />
         </div>
         
         <div className="project 5">
@@ -76,7 +76,7 @@ export default function Projects() {
         </div>
         
         <div className="project 6">
-            <ImmunTracker />
+            <Sonic />  
         </div>
 
         <div className="project 6">

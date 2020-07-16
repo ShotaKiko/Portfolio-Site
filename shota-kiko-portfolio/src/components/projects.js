@@ -8,6 +8,7 @@ import ImmunTracker from './projectCards/immunTracker'
 import Sonic from './projectCards/sonicLambdog'
 import UIProject from './projectCards/uiProject'
 import GameOfLife from './projectCards/gameOfLife'
+import SpiderGraph from './projectCards/spiderGraph'
 
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
@@ -69,11 +70,16 @@ export default function Projects() {
         <div className="project 3">
             <Sonic />  
         </div>
-        <div className="project 4">
+        
+        <div className="project 5">
+            <SpiderGraph />
+        </div>
+        
+        <div className="project 6">
             <ImmunTracker />
         </div>
 
-        <div className="project 5">
+        <div className="project 6">
             <UIProject />
         </div>
        </div>

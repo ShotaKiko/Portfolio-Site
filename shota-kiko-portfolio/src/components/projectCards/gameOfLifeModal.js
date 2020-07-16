@@ -168,7 +168,7 @@ export default function GameOfLifeModal(props) {
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://img.imageupload.net/2020/07/15/GameofLifeSimulation.png"/>
-            <div className="modalStack"> HTML | CSS | Javascript | React | Immer  </div>
+            <div className="modalStack"> HTML | CSS | Javascript | React | Immer | Material UI  </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalRight">

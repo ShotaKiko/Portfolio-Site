@@ -164,7 +164,7 @@ export default function SpiderGraphModal(props) {
         scroll={props.scroll}
       >
         <DialogTitle id="customized-dialog-title" onClose={props.onClose} className={classes.headline}>
-          Sonic the Lambdog
+          Spider Graph
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://img.imageupload.net/2020/07/16/spiderGraphDataSet.md.png"/>

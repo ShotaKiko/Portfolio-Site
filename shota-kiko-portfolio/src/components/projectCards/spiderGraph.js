@@ -91,8 +91,59 @@ export default function SpiderGraph() {
   };
 
   return (
-    <div>
-        hi
-    </div>
+    <Card className={classes.root}>
+      <SpiderGraphModal open={open} scroll={scroll} fullscreen={fullscreenBoolean} onClose={handleClose} />
+      <CardActionArea  onClick={handleClickOpen('body')}>
+        <CardMedia className={classes.media}
+          component="img"
+          
+          alt="Conway's Game of Life"
+          image="https://img.imageupload.net/2020/07/16/spiderGraphCardTest.png"
+          title="Conway's Game of Life"
+        />
+        <CardContent className={classes.content}>
+          <Typography gutterBottom variant="h5" component="h2" className={classes.header}>
+          Spider Graph
+          </Typography>
+
+          <Typography className={classes.sub} color="textSecondary" gutterBottom> Javascript | React | CSS </Typography>
+          
+          <Typography variant="body2" component="p" className={classes.cardText}>
+            SpiderGraph is designed help users organize their data in an
+            intuitive and customizable manner. Users are able to create charts, input and modify
+            the number of datasets as well as style the graph itself.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+      
+      <div className="cardBootons">
+        <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/Build-Week-Spider-Graph-1" 
+          target="mynewtab" rel="noopener noreferrer">
+          <GitHubIcon className="githubIcon" /> <span style={{visibility:"hidden"}}>i</span>
+              Github
+        </Button>
+        
+        <Button 
+          className={classes.booton}
+          classes={{ focusVisible: false }} 
+          size="small" 
+          variant="contained" 
+          onClick={handleClickOpen('body')}
+        >
+            <LaunchIcon />
+            Learn More <span style={{visibility:"hidden"}}>i</span>
+        </Button>
+      
+        <Button className={classes.booton} classes={{ focused: classes.inputFocused }} size="small" variant="contained" href="https://lambda-spider.now.sh/"
+            target="mynewtab" rel="noopener noreferrer" >
+            <LaptopMacIcon /> <span style={{visibility:"hidden"}}>iii</span>
+              Visit Site
+        </Button>
+        </div>
+      
+      </CardActions>
+        
+    </Card>
   );
 }

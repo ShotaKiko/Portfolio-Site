@@ -167,8 +167,8 @@ export default function SpiderGraphModal(props) {
           Sonic the Lambdog
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/25/sonic-lambdog-dashboard.png"/>
-            <div className="modalStack"> Python | Django | React | Semantic UI </div>
+            <img className="modalImage" src="https://img.imageupload.net/2020/07/16/spiderGraphDataSet.md.png"/>
+            <div className="modalStack"> HTML | CSS | Javascript | React </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalRight">
@@ -178,16 +178,17 @@ export default function SpiderGraphModal(props) {
             <Typography variant="body2" component="p">
               <ul className="numba2">
                     <li>
-                        User onboarding functionality in order to view other players in same room
+                        Ability to inserts data sets and add appropriate scale for respective data.
                     </li>
                     <li>
-                        100+ room maze generating algorithm traversable from start to finish
+                        Features two color themes to better stylize the created charts.
                     </li>
                     <li>
-                        Player and room status updates reflected on UI
+                        Defaults to four categories but includes functionality to add categories to fit user needs.
                     </li>
                     <li>
-                        Persistence of users room location in the maze even upon player logout
+                        Future functionality will include the ability to download the created chart as well as user login
+                        to view associated spider graphs.
                     </li>
                 </ul>
               </Typography>
@@ -200,29 +201,30 @@ export default function SpiderGraphModal(props) {
               <Typography gutterBottom variant="body2" component="p">
                 <ul className="numba1">
                     <li>
-                        Led the development of the maze and room generating algorithm
+                        Led the development as project lead over seeing seven students responsible for landing page layout, frontend architecture, 
+                        backend architecture and UX design.
                     </li>
                     <li>
-                        Built out backend and endpoints for player movement using Django
+                        Held daily standups to review progress and define goals to hit project MVP guidelines.
                     </li>
                     <li>
-                        Utilized Postgres to store player info allowing for data persistence
+                        Coordinated with front and back end teams to hit stakeholder expectations.
                     </li>
                     <li>
-                        Configured responses to frontend following player movement attempts
+                        Resolved issues during pair programming sessions and debugged code throughout app development.
                     </li>
                 </ul>
               </Typography>
             </div>
         </DialogContent>
         <DialogActions className={classes.buttonSection}>
-            <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/Sonic-BW"
+            <Button className={classes.booton}  size="small" variant="contained" href="https://github.com/Build-Week-Spider-Graph-1"
             target="_blank" rel="noopener noreferrer" >
             <GitHubIcon className="githubIcon"/> <span style={{visibility:"hidden"}}>i</span>
                 Github
             </Button>
             <Button className={classes.booton}  size="small" variant="contained" 
-            href="https://zealous-poincare-b92bd3.netlify.com" target="mynewtab"rel="noopener noreferrer">
+            href="https://lambda-spider.now.sh/" target="mynewtab"rel="noopener noreferrer">
             <LaptopMacIcon /> <span style={{visibility:"hidden"}}>ii</span>
                 Visit Site
             </Button>

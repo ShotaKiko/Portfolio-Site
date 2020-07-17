@@ -168,7 +168,7 @@ export default function SonicLambdogModal(props) {
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/25/sonic-lambdog-dashboard.png"/>
-            <div className="modalStack"> Python | Django | React | Semantic UI </div>
+            <div className="modalStack"> Python | Django | React | PostgreSQL | Semantic UI </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalRight">

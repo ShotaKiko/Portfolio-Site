@@ -163,7 +163,7 @@ export default function FieldTripModal(props) {
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/24/fieldtripp-teacher-dashboard.png"/>
-            <div className="modalStackLong"> React N | Node.js | Express | Postgress | Passport.js | Semantic UI </div>
+            <div className="modalStackLong"> React N | Node.js | Express | PostgreSQL | Passport.js | Semantic UI </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalLeft">

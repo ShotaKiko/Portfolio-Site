@@ -222,7 +222,7 @@ export default function SonicLambdogModal(props) {
                 Github
             </Button>
             <Button className={classes.booton}  size="small" variant="contained" 
-            href="https://zealous-poincare-b92bd3.netlify.com" target="mynewtab"rel="noopener noreferrer">
+            href="https://sleepy-varahamihira-38768e.netlify.app/" target="mynewtab"rel="noopener noreferrer">
             <LaptopMacIcon /> <span style={{visibility:"hidden"}}>ii</span>
                 Visit Site
             </Button>

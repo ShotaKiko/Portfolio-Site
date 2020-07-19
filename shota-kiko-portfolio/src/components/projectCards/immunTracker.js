@@ -154,7 +154,9 @@ export default function ImmunTracker() {
           Immunization Tracker
           </Typography>
 
-          <Typography className={classes.sub} color="textSecondary" gutterBottom>React | Redux | Node </Typography>
+          <Typography className={classes.sub} color="textSecondary" gutterBottom>
+            HTML | CSS | Javascript | React | Redux | Node 
+          </Typography>
           
           <Typography variant="body2" component="p" className={classes.cardText}>
             ImmuTrack is an app designed to help reduce the hassle and potential stress through 

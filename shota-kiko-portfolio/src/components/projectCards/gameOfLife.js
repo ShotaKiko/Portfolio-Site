@@ -105,7 +105,9 @@ export default function GameOfLife() {
           Game of Life
           </Typography>
 
-          <Typography className={classes.sub} color="textSecondary" gutterBottom> Javascript | React | CSS </Typography>
+          <Typography className={classes.sub} color="textSecondary" gutterBottom> 
+            HTML | CSS | Javascript | React  
+          </Typography>
           
           <Typography variant="body2" component="p" className={classes.cardText}>
             The Game of Life is a cellular automaton devised by John Horton Conway. 

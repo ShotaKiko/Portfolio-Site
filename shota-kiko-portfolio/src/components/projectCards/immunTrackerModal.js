@@ -167,7 +167,9 @@ export default function ImmunTrackerModal(props) {
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
             <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/25/immuTrack-patient-dash.png"/>
-            <div className="modalStackLong">  React | Redux | Node.js | Express | Knex | PostgreSQL | Bootstrap </div>
+            <div className="modalStackLong">
+              HTML | CSS | Javascript | React | Redux | Node.js | Express | Knex | PostgreSQL | Bootstrap 
+            </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>
           <div className="modalRight">

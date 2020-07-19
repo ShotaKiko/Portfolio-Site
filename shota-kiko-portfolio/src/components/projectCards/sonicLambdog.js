@@ -108,7 +108,7 @@ export default function Sonic() {
           </Typography>
 
           <Typography className={classes.sub} color="textSecondary" gutterBottom>
-              Python | Django | React 
+            React | Python | Django  
           </Typography>
           
           <Typography variant="body2" component="p" className={classes.cardText}>

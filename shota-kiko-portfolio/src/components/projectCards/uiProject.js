@@ -106,7 +106,7 @@ export default function UIProject() {
           </Typography>
 
           <Typography className={classes.sub} color="textSecondary" gutterBottom>
-              HTML | CSS | Javascript 
+              HTML | CSS | Javascript | Less
           </Typography>
         
           <Typography variant="body2" component="p" className={classes.cardText}>

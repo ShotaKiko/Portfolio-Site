@@ -106,7 +106,9 @@ export default function SpiderGraph() {
           Spider Graph
           </Typography>
 
-          <Typography className={classes.sub} color="textSecondary" gutterBottom> Javascript | React | CSS </Typography>
+          <Typography className={classes.sub} color="textSecondary" gutterBottom>
+            HTML | CSS | Javascript | React | Chart.js
+          </Typography>
           
           <Typography variant="body2" component="p" className={classes.cardText}>
             SpiderGraph is designed help users organize their data in an

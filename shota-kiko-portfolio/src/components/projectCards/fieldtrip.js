@@ -105,7 +105,9 @@ export default function MyFieldTripp() {
           MyFieldTripp Planner
           </Typography>
 
-          <Typography className={classes.sub} color="textSecondary" gutterBottom>ReactN | Node | Postgres </Typography>
+          <Typography className={classes.sub} color="textSecondary" gutterBottom>
+            HTML | CSS | Javascript | ReactN | Node | Postgres 
+          </Typography>
           
           <Typography variant="body2" component="p" className={classes.cardText}>
             MyFieldTripp is simple and dependable field trip planner application

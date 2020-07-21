@@ -183,7 +183,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-python-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text"> Proficiency building backend servers with Python3 </p>
+                                        <p className="flip-card-text"> Experienced in web development and automation with Python </p>
                                     </div> 
                                 </div>
                                 
@@ -195,7 +195,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-django-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text"> Building backend architectures with Django</p>
+                                        <p className="flip-card-text"> Building RESTful APIs with Django</p>
                                     </div> 
                                 </div>
                                 

@@ -710,7 +710,7 @@ pre tt:after {
 /* ````````````````````````````*/
 
 .navlink.active {
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
   color: whitesmoke;
 }
 
@@ -870,18 +870,6 @@ pre tt:after {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-.quoteContainer{
-  font-size: .6rem;
-  text-align: end;
-  font-style: italic;
-  visibility: hidden;
-}
-
-.aboutLeftHeader:hover .quoteContainer{
-  display: block;
-  visibility: visible;
 }
 
 .aboutLeft{

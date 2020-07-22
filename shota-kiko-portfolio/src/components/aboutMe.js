@@ -51,19 +51,14 @@ export default function AboutMe() {
                         <h3>
                         About
                         </h3>
-                        {/* <div id="quoteContainer">
-                            <p className="quote">
-                                "The man who asks a question is a fool for
-                                a minute, the man who does not ask is a fool for life."
-
-                                <p>-Confucious</p>
-                            </p>
-                        </div> */}
                     </div>
                         <div className="aboutText">
                             <div className="profilePicContainer">
-                                {/* <img className="profilePic" src="https://imagehost.imageupload.net/2020/05/27/profilePic.th.jpg" alt="Shota Kiko"/> */}
-                                <img className="profilePic" src="https://imagehost.imageupload.net/2020/05/28/profilepic2.th.jpg" alt="Shota Kiko"/>
+                                <img 
+                                    className="profilePic" 
+                                    src="https://imagehost.imageupload.net/2020/05/28/profilepic2.th.jpg" 
+                                    alt="Shota Kiko Profile Pic"
+                                />
                             </div>
                         <div className="textCard">
                                 <div className="text 1">

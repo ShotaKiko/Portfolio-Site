@@ -256,7 +256,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-less-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text">Experienced using Less framework for scalable apps</p>
+                                        <p className="flip-card-text">Experienced using Less preprocessor for scalable apps</p>
                                     </div> 
                                 </div>
                                 
@@ -268,7 +268,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-sass-original colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text">Experienced using Sass framework for scalable apps</p>
+                                        <p className="flip-card-text">Experienced using Sass preprocessor for scalable apps</p>
                                     </div> 
                                 </div>
                                 

@@ -173,13 +173,13 @@ export default function UIProjectModal(props) {
             <Typography variant="body2" component="p">
               <ul className="numba1">
                     <li>
-                        Multipage app built to provided design specifications
+                        Multipage website built to provided design specifications
                     </li>
                     <li>
-                        Built using vanilla HTML, Javascript, Less CSS preprocesser 
+                        Built using HTML, vanilla Javascript and CSS utlizizing the Less preprocesser 
                     </li>
                     <li>
-                       Features a fluid responsive design for optimal user experience
+                       Features a fluid responsive design for optimal user experience across variety of devices
                     </li>
                     <li>
                         Basic scroll effects and animations to improve website experience
@@ -201,7 +201,7 @@ export default function UIProjectModal(props) {
                         Hosted on Netlify with integrated Github continuous deployment
                     </li>
                     <li>
-                        Precise adherence to design files for smooth desktop and mobile users
+                        Precise adherence to design files for smooth desktop tablet and mobile user experience
                     </li>
                     <li>
                         Incorporated smooth scroll  and Greensock animations

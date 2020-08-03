@@ -1138,7 +1138,8 @@ i{
   }
 
   .text{
-    font-size: .9rem;
+    font-size: .8rem;
+    line-height: 1.4;
   }
 
   .aboutLink{

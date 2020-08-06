@@ -97,7 +97,7 @@ export default function GameOfLife() {
         <CardMedia className={classes.media}
           component="img"
           alt="Conway's Game of Life"
-          image="https://img.imageupload.net/2020/07/16/GameofLifeDashboardTest.png"
+          image="https://res.cloudinary.com/dok0cky0u/image/upload/v1596753383/Portfolio/GOLDashboard_ibwvua.png"
           title="Conway's Game of Life"
         />
         <CardContent className={classes.content}>

@@ -97,9 +97,9 @@ export default function SpiderGraph() {
         <CardMedia className={classes.media}
           component="img"
           
-          alt="Conway's Game of Life"
+          alt="Spider Graph Example"
           image="https://img.imageupload.net/2020/07/16/spiderGraphCardTest.png"
-          title="Conway's Game of Life"
+          title="Spider Graph Chart"
         />
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2" className={classes.header}>

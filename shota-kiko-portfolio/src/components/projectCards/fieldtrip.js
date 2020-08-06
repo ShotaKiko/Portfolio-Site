@@ -97,7 +97,7 @@ export default function MyFieldTripp() {
         <CardMedia className={classes.media}
           component="img"
           alt="fieldtripp"
-          image="https://imagehost.imageupload.net/2020/05/16/fieldtrip-landing.md.png"
+          image="https://res.cloudinary.com/dok0cky0u/image/upload/v1596752357/Portfolio/fieldtrip-landing.md_ngfl1n.png"
           title="Field Trip Planner"
         />
         <CardContent className={classes.content}>

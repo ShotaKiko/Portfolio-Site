@@ -56,7 +56,7 @@ export default function AboutMe() {
                             <div className="profilePicContainer">
                                 <img 
                                     className="profilePic" 
-                                    src="https://imagehost.imageupload.net/2020/05/28/profilepic2.th.jpg" 
+                                    src="https://res.cloudinary.com/dok0cky0u/image/upload/v1596752355/Portfolio/profilepic2.th_u3apuk.jpg" 
                                     alt="Shota Kiko Profile Pic"
                                 />
                             </div>

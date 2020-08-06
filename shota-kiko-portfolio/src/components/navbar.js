@@ -5,7 +5,7 @@ import { animateScroll as scroll} from 'react-scroll'
 const NavBar = () =>(
     <div className="navcontainer-fluid">
        <div className="logoContainer" >
-        <img className="logoimage" src="https://imagehost.imageupload.net/2020/03/26/logov2.png" alt="logo" onClick={() => scroll.scrollToTop()}/>
+        <img className="logoimage" src="https://res.cloudinary.com/dok0cky0u/image/upload/v1596752355/Portfolio/logov2_1_x1p4je.png" alt="logo" onClick={() => scroll.scrollToTop()}/>
 
        </div>
        

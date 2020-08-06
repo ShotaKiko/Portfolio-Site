@@ -99,7 +99,7 @@ export default function Sonic() {
         <CardMedia className={classes.media}
           component="img"
           alt="sonicthelambdog"
-          image="https://imagehost.imageupload.net/2020/05/16/sonic-lambdog.md.png"
+          image="https://res.cloudinary.com/dok0cky0u/image/upload/v1596752357/Portfolio/sonic-lambdog.md_lreypc.png"
           title="Sonic the Lambdog"
         />
         <CardContent>

@@ -15,6 +15,7 @@ import LaunchIcon from '@material-ui/icons/Launch';
 import ImmunTrackerModal from './immunTrackerModal'
 
 import useMediaQuery from '@material-ui/core/useMediaQuery'; 
+import immuTrack from '../../images/immuTrackLanding.png'
 
 const accent = teal[500]
 
@@ -146,7 +147,9 @@ export default function ImmunTracker() {
         <CardMedia className={classes.media}
           component="img"
           alt="immunizationTracker"
-          image="https://imagehost.imageupload.net/2020/05/16/immuTRack-landingPage.md.png"
+          // image="https://imagehost.imageupload.net/2020/05/16/immuTRack-landingPage.md.png"
+          // image={immuTrack}
+          image = "https://res.cloudinary.com/dok0cky0u/image/upload/v1596752356/Portfolio/immuTRack-landingPage.md_tlphfh.png"
           title="Immunization Tracker"
         />
         <CardContent>

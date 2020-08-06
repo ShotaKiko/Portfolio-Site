@@ -97,7 +97,7 @@ export default function UIProject() {
         <CardMedia className={classes.media}
           component="img"
           alt="sonicthelambdog"
-          image="https://imagehost.imageupload.net/2020/05/16/ui-project.md.png"
+          image="https://res.cloudinary.com/dok0cky0u/image/upload/v1596752357/Portfolio/ui-project.md_ielvul.png"
           title="User Interface Project "
         />
         <CardContent>

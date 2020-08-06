@@ -98,7 +98,7 @@ export default function SpiderGraph() {
           component="img"
           
           alt="Spider Graph Example"
-          image="https://img.imageupload.net/2020/07/16/spiderGraphCardTest.png"
+          image="https://res.cloudinary.com/dok0cky0u/image/upload/v1596757713/Portfolio/SpiderGraphDash_uhyodw.png"
           title="Spider Graph Chart"
         />
         <CardContent className={classes.content}>

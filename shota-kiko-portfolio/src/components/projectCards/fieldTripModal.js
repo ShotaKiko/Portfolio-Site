@@ -162,7 +162,7 @@ export default function FieldTripModal(props) {
           MyFieldTripp
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/24/fieldtripp-teacher-dashboard.png"/>
+            <img className="modalImage" src="https://res.cloudinary.com/dok0cky0u/image/upload/v1596753971/Portfolio/fieldtripp-teacher-dashboard_1_swtxf2.png"/>
             <div className="modalStackLong"> 
               HTML | CSS | React N | Node.js | Express | PostgreSQL | Passport.js | Semantic UI 
             </div>

@@ -167,7 +167,7 @@ export default function SonicLambdogModal(props) {
           Sonic the Lambdog
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/25/sonic-lambdog-dashboard.png"/>
+            <img className="modalImage" src="https://res.cloudinary.com/dok0cky0u/image/upload/v1596753970/Portfolio/sonic-lambdog-dashboard_1_bvetbj.png"/>
             <div className="modalStack"> 
               HTML | CSS | Javascript| React | Styled Components | Python | Django   
             </div>

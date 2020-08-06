@@ -167,7 +167,7 @@ export default function GameOfLifeModal(props) {
           John Conway's Game of Life
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://img.imageupload.net/2020/07/15/GameofLifeSimulation.png"/>
+            <img className="modalImage" src="https://res.cloudinary.com/dok0cky0u/image/upload/v1596753971/Portfolio/GOLModal_id1tya.png"/>
             <div className="modalStack"> HTML | CSS | Javascript | React | Immer | Material UI  </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>

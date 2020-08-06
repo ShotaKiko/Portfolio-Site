@@ -162,7 +162,7 @@ export default function UIProjectModal(props) {
           User Interface Project 
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/26/ui-project-services.png"/>
+            <img className="modalImage" src="https://res.cloudinary.com/dok0cky0u/image/upload/v1596753766/Portfolio/ui-project-services_1_gswgxy.png"/>
             <div className="modalStack">  HTML5 | CSS3 | Javascript ES6 | Less </div>
         </DialogContent>
         <DialogContent dividers className={classes.content}>

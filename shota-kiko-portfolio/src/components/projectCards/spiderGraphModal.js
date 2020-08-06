@@ -167,7 +167,7 @@ export default function SpiderGraphModal(props) {
           Spider Graph
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://img.imageupload.net/2020/07/16/spiderGraphDataSet.md.png"/>
+            <img className="modalImage" src="https://res.cloudinary.com/dok0cky0u/image/upload/v1596758032/Portfolio/spiderAbout_xsydjj.png"/>
             <div className="modalStack"> 
               HTML | CSS | Javascript | React | Redux | Node | Express | Bcrypt | Sqlite3 
             </div>

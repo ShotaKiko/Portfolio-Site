@@ -166,7 +166,7 @@ export default function ImmunTrackerModal(props) {
           Immunization Tracker
         </DialogTitle>
         <DialogContent className={classes.imageContent}>
-            <img className="modalImage" src="https://imagehost.imageupload.net/2020/04/25/immuTrack-patient-dash.png"/>
+            <img className="modalImage" src="https://res.cloudinary.com/dok0cky0u/image/upload/v1596753971/Portfolio/immuTrack-patient-dash_1_kw5sax.png"/>
             <div className="modalStackLong">
               HTML | CSS | Javascript | React | Redux | Node.js | Express | Knex | PostgreSQL | Bootstrap 
             </div>

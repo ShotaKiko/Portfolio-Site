@@ -178,7 +178,7 @@ export default function AboutMe() {
                                         <i class="flip-card-front devicon-python-plain-wordmark colored"></i>
                                     
                                     <div className="flip-card-back">
-                                        <p className="flip-card-text"> Experienced in web development and automation with Python </p>
+                                        <p className="flip-card-text"> Experienced in web dev and automation with Python</p>
                                     </div> 
                                 </div>
                                 

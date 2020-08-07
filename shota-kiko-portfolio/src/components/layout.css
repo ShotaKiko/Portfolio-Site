@@ -875,7 +875,7 @@ pre tt:after {
 .aboutLeft{
   /* border: 2px solid green; */
   width: 49.5%;
-  height: 80vh;
+  min-height: 80vh;
   font-size: 1.1vw;
   line-height: 1.6;
   display: flex;
@@ -934,15 +934,14 @@ pre tt:after {
 .aboutRight{  
   /* border: 2px solid blue; */
   width: 40%;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
 
-
 .iconContainer{
   /* border: 1px solid red; */
-  height: 60vh;
+  min-height: 60vh;
 }
 
 .firstRow{
@@ -1113,7 +1112,7 @@ i{
   }
 }
 
-/* Profile pic for laptop sizes */
+/* About Section for laptop sizes */
 @media screen and (max-width: 1500px){
   .profilePicContainer{
     /* border: 2px solid orange; */
@@ -1129,6 +1128,11 @@ i{
     height: 70%;
   }
 
+  .iconContainer{
+    /* border: 1px solid red; */
+    min-height: 450px;
+  }
+
   .flip-card{
     width: 20%;
   }
@@ -1138,7 +1142,7 @@ i{
   }
 
   .text{
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 1.4;
   }
 

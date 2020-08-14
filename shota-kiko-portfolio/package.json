@@ -7,6 +7,7 @@
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
+    "@babel/compat-data": "^7.9.0",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.4.1",
     "devicon": "^2.2.0",

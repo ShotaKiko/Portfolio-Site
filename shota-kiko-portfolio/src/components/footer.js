@@ -65,7 +65,7 @@ export default function Footer() {
           <Button
             target="mynewtab"
             rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1D3EpBSPrpfouPEWouu7YocFLo0W8UlIS/view?usp=sharing"
+            href="https://drive.google.com/file/d/1eoeqI7wHjXoyGMsCR8VSHvlBdF-asLUo/view?usp=sharing"
           >
             <FindInPageIcon
               className={classes.icon}
